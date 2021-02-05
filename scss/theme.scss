@@ -1,0 +1,16 @@
+@import 'starter';
+
+header {
+  border-bottom:2px solid black;
+}
+footer {
+  border-top: 2px solid black;
+}
+
+
+.content-flexible {
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+}

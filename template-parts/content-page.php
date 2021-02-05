@@ -11,14 +11,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="jumbotron text-center entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php amc_theme_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-		the_content();
+		<?php if ( have_rows( 'content' ) ): ?>
+		  <div id="main-body" class="container">
+		    <?php get_template_part("template-parts/content", "flexible"); ?>
+		  </div>
+		<?php endif;
 
 		wp_link_pages(
 			array(
