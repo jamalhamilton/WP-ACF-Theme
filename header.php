@@ -28,8 +28,8 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/amc-logo-black.png" alt="logo">
 			<?php
-			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -56,5 +56,10 @@
 				)
 			);
 			?>
+			<ul class="right-links">
+				<li><a href="#">Join</a></li>
+				<li><a href="#">Renew</a></li>
+				<li><a href="#">Donate</a></li>
+			</ul>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

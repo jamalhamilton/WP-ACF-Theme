@@ -1,12 +1,11 @@
 @import 'starter';
+@import 'header';
+@import 'modules';
 
-header {
-  border-bottom:2px solid black;
-}
+
 footer {
   border-top: 2px solid black;
 }
-
 
 .content-flexible {
   max-width:1200px;

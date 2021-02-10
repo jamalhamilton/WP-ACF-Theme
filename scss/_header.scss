@@ -1,0 +1,53 @@
+.site-header {
+  display: flex;
+  max-width:1450px;
+  margin:auto;
+
+
+  .site-branding {
+    width:200px;
+    img {
+    height: 100px;
+    width: 100px;
+    }
+    .site-title {
+      display: none;
+
+
+    }
+  }
+
+  .main-navigation {
+    width:calc(100% - 200px);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+
+    a  {
+      color:black;
+    }
+
+    .menu-main-menu-container {
+      max-width: 550px;
+      overflow:hidden;
+      ul {
+        margin-top:28px;
+        li {
+          margin-right:45px;
+          font-size:23px;
+        }
+      }
+
+    }
+
+    .right-links {
+      display: block;
+      padding-left: 50px;
+      border-left:1px solid black;
+      margin-left: 50px;
+      padding-top:20px;
+    }
+
+
+  }
+}
