@@ -60,6 +60,11 @@
 				)
 			);
 			?>
+			<ul class="icon-links">
+				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
+			</ul>
 			<ul class="right-links">
 				<li><a href="#">Join</a></li>
 				<li><a href="#">Renew</a></li>
