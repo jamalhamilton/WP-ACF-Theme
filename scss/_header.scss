@@ -2,6 +2,7 @@
   display: flex;
   max-width:1450px;
   margin:auto;
+  width:100%;
 
 
   .site-branding {
@@ -26,6 +27,7 @@
     a  {
       color:black;
       font-family: "Swiss721BT-Bold";
+      white-space:nowrap;
     }
 
     .menu-main-menu-container {
@@ -51,4 +53,9 @@
 
 
   }
+}
+
+
+.entry-header {
+  display: none;
 }

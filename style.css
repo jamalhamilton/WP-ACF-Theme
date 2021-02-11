@@ -26,28 +26,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html, body, section {
     height: 100%;
   }
-  
+
   div {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   h1 {
     font-size: 40px;
     margin: 0 0 0.75rem 0;
   }
-  
+
   .container {
     display: flex;
   }
-  
-  .left-half {    
+
+  .left-half {
     flex: 1;
     padding: 1rem;
   }
-  
-  .right-half {    
+
+  .right-half {
     flex: 1;
     padding: 1rem;
   }
@@ -64,13 +64,13 @@ html, body, section {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-  }  
+  }
   a.cta_link:visited {
     text-decoration: none;
-  }  
+  }
   a.cta_link:hover {
     text-decoration: underline;
-  }  
+  }
   a.cta_link:active {
     text-decoration: underline;
   }
@@ -81,7 +81,6 @@ html, body, section {
 * { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-text-size-adjust: none; }
 html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; background: #fff; }
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
-header.site-header {position: absolute;top: 0;left: 0px;width: 100%;z-index: 9999;}
 .content-flexible { max-width: 1674px; margin-left: auto; margin-right: auto; padding: 20px}
 .content-flexible-hero_body{ margin-bottom: 60px;}
 .hero_image{ background-repeat: no-repeat; background-position: top center; background-size: cover; width:100%; min-height: 512px;}
@@ -98,11 +97,11 @@ header.site-header {position: absolute;top: 0;left: 0px;width: 100%;z-index: 999
 .fullbleed_with_text .intro_text h2{color:#fff; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt'; font-weight: bold;
 }
 .fullbleed_with_text .intro_text p{color:#fff; padding-top: 20px;}
-  a.fullbleed_cta_link:link { color:#fff; text-decoration: none; font-weight: 500; font-size: 18px; }  
-  a.fullbleed_cta_link:visited { text-decoration: none; }  
+  a.fullbleed_cta_link:link { color:#fff; text-decoration: none; font-weight: 500; font-size: 18px; }
+  a.fullbleed_cta_link:visited { text-decoration: none; }
   .fullbleed_with_text .intro_text.left_block { width: 50%;  padding-left: 8%;  padding-top: 12%;  padding-bottom: 5%;}
   .fullbleed_image.right_block{ background-repeat: no-repeat; background-position: top center; background-size: cover; width:50%; min-height: 400px;
-  }  
+  }
 /*--Contained CTA------*/
 .contained_cta {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;  padding:0 10%;}
 .contained_cta .vertcial_text { position: absolute;  top: 50%;  width: 20%;  display: flex;}
@@ -112,9 +111,9 @@ header.site-header {position: absolute;top: 0;left: 0px;width: 100%;z-index: 999
 .contained_cta .intro_text h2{color:#000; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt'; font-weight: bold;
 }
 .contained_cta .intro_text p{color:#000; padding-top: 20px;}
-a.contained_cta_link:link { color:#000; text-decoration: none; font-weight: 500; font-size: 18px;}  
-a.contained_cta_link:visited { text-decoration: none;}  
-  
+a.contained_cta_link:link { color:#000; text-decoration: none; font-weight: 500; font-size: 18px;}
+a.contained_cta_link:visited { text-decoration: none;}
+
 .contained_cta.right_block{ background-repeat: no-repeat; background-position: top center; background-size: cover; width:50%; padding: 10%; }
 /*--------------------*/
 @media(max-width:1440px) {
