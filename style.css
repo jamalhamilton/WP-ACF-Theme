@@ -27,30 +27,6 @@ html, body, section {
     height: 100%;
   }
 
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h1 {
-    font-size: 40px;
-    margin: 0 0 0.75rem 0;
-  }
-
-  .container {
-    display: flex;
-  }
-
-  .left-half {
-    flex: 1;
-    padding: 1rem;
-  }
-
-  .right-half {
-    flex: 1;
-    padding: 1rem;
-  }
   .verticle_title {
     line-height: 40px;
     position: absolute;
@@ -83,19 +59,23 @@ html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; backg
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
 .content-flexible { max-width: 1674px; margin-left: auto; margin-right: auto; padding: 20px}
 .content-flexible-hero_body{ margin-bottom: 60px;}
-.hero_image{ background-repeat: no-repeat; background-position: top center; background-size: cover; width:100%; min-height: 512px;}
+.hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 650px;}
 .hero_image_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;}
 .vertcial_text {position: absolute; top: 40%; left:0px; width: 20% ;}
 .vertcial_text span{ font-size: 30px; line-height: 36px; letter-spacing: 4.5px; transform: rotate(270deg); display: block;}
 .hero_image_with_text .intro_text { width:85%; padding-left: 20%;  padding-top: 5%;}
-.hero_image_with_text .intro_text h2{ font-size: 50px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt'; font-weight: bold;}
+.hero_image_with_text .intro_text h2{ font-size: 50px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; }
 .hero_image_with_text .intro_text p{padding-top: 20px;}
 
 /*Fullbleed CTA*/
+.content-flexible-full_bleed_cta{margin: 20px 0;}
 .fullbleed_with_text {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9;}
 .fullbleed_with_text .intro_text { width: 85%;  padding-left: 10%;  padding-top: 10%;  padding-bottom: 10%;}
-.fullbleed_with_text .intro_text h2{color:#fff; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt'; font-weight: bold;
+.fullbleed_with_text .intro_text h2{color:#fff; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; 
 }
+.fullbleed_with_text.image{background: #d9d8d6;}
+.fullbleed_with_text.image .intro_text h2{color:#000;margin-bottom: 15px;}
+.fullbleed_with_text.image .intro_text a{color:#000;}
 .fullbleed_with_text .intro_text p{color:#fff; padding-top: 20px;}
   a.fullbleed_cta_link:link { color:#fff; text-decoration: none; font-weight: 500; font-size: 18px; }
   a.fullbleed_cta_link:visited { text-decoration: none; }
@@ -104,17 +84,21 @@ html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; backg
   }
 /*--Contained CTA------*/
 .contained_cta {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;  padding:0 10%;}
-.contained_cta .vertcial_text { position: absolute;  top: 50%;  width: 20%;  display: flex;}
+.contained_cta .vertcial_text { position: absolute;  top: 50%;  width: 20%;  display: flex;left: 4%;}
 .contained_cta .vertcial_text span{ font-size: 30px; line-height: 36px; letter-spacing: 4.5px; transform: rotate(270deg); display: block; }
 
-.contained_cta .intro_text {width: 50%; padding-top: 8%; padding-bottom: 5%; padding-left: 5%;padding-right: 5%;}
-.contained_cta .intro_text h2{color:#000; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt'; font-weight: bold;
+.contained_cta .intro_text {width: 50%; padding-top: 8%; padding-bottom: 5%; padding-left: 10%;padding-right: 5%;}
+.contained_cta .intro_text h2{color:#000; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; 
 }
 .contained_cta .intro_text p{color:#000; padding-top: 20px;}
 a.contained_cta_link:link { color:#000; text-decoration: none; font-weight: 500; font-size: 18px;}
 a.contained_cta_link:visited { text-decoration: none;}
 
-.contained_cta.right_block{ background-repeat: no-repeat; background-position: top center; background-size: cover; width:50%; padding: 10%; }
+.contained_cta.right_block{ background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+  padding: 1%; }
 /*--------------------*/
 @media(max-width:1440px) {
 .vertcial_text { top: 45%; width: 25%;}
@@ -124,19 +108,41 @@ a.contained_cta_link:visited { text-decoration: none;}
 
 }
 @media(max-width:767px) {
+  .fullbleed_with_text .intro_text.left_block {
+    width: 100%;}
+  .fullbleed_image.right_block{ width: 100%;}
 
-}@media(max-width:480px) {
 
+  .contained_cta .intro_text {
+    width: 100%;
+  }
+  .contained_cta.right_block {
+    width: 100%;
+    padding: 0;
 }
 
-@media only screen and (min-width: 960px) {
-  .content-flexible {
-      width: 960px;
-    }
+  .hero_image_with_text .intro_text h2 {
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: 2px;
 }
-@media only screen and (max-width: 960px) {
-  .content-flexible {
-      width: 768px;
-    }
+.contained_cta .vertcial_text {
+  top: 20%;
+    width: 35%;
+    left: -25px;
+}
+.hero_image{
+  min-height:450px;
+}
+
+.vertcial_text {
+  top: 50%;
+  width: 34%;
+  left: -40px;
+}
+
+}
+@media(max-width:480px) {
+
 }
 /*# sourceMappingURL=map/theme.css.map */

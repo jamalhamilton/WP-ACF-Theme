@@ -4,7 +4,10 @@ $vertical_title = get_sub_field('vertical_title');
 $hero_image = get_sub_field('hero_image');
 $headline_copy = get_sub_field('headline_copy');
 $body_copy = get_sub_field('body_copy');
-$body_copy_2nd_column = get_sub_field('body_copy_2nd_column');
+$body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
+
+<div class="content-flexible">
+<?php
 if(! empty($hero_image ['url'])):
 ?>
 <div class="hero_image" style="background-image: url(<?php echo  $hero_image ['url'] ; ?>);"></div>
@@ -24,3 +27,4 @@ if(! empty($hero_image ['url'])):
       <?php endif; ?>
 	  </div>
 </div>
+	  </div>

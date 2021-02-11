@@ -20,5 +20,7 @@ $image = get_sub_field('image');
           <?php } ?>
           
         </div>       
-        <div class="contained_cta right_block" style="background-image: url(<?php echo  $image ['url'] ; ?>);"></div>
+        <div class="contained_cta right_block" style="background-image: url(<?php //echo  $image ['url'] ; ?>);">
+      <img src="<?php echo  $image ['url'] ; ?>">
+    </div>
         </div>  
