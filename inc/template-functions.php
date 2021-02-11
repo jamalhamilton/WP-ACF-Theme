@@ -35,3 +35,9 @@ function amc_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'amc_theme_pingback_header' );
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+    
+    add_image_size( 'hero-image', 1676, 655, true ); 
+}
