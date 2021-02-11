@@ -1,0 +1,492 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4010321, 2021-02-08T15:03:03-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ConduitITCPro-Bold by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/bold/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-BoldItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/bold-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-ExtraLight by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/extra-light/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-ExtraLightItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/extra-light-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-Regular by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/conduit/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-Italic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-ExtraBold by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/extrabold/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-ExtraBoldItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/extrabold-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-Light by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/light/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-LightItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/light-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-Medium by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/medium-medium/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-MediumItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/medium-medium-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-Black by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/black/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: ConduitITCPro-BlackItalic by ITC
+ * URL: https://www.myfonts.com/fonts/itc/conduit/black-italic/
+ * Copyright: Copyright 1997, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * Webfont: Recoleta-RegularDEMO by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/regular-demo/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Black by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/black/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Black by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-black/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Bold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/bold/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Medium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/medium/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Bold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-bold/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Medium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-medium/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Thin by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/thin/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Thin by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-thin/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Light by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/light/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-Regular by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/regular/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Recoleta-SemiBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/sem-ibold/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Light by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-light/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-SemiBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-semi-bold/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: RecoletaAlt-Regular by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/alt-regular/
+ * Copyright: Copyright &amp;#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Thin by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-thin/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-ThinItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-thin-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Light by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-light/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-LightItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-light-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Regular by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-roman/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Italic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Medium by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-medium/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-MediumItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-medium-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Bold by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Heavy by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-heavy/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-HeavyItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-heavy-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Black by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackNo2 by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-no-2/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldOutline by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-outline/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackOutline by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-outline/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-LightCondensed by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-light-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-LightCondensedItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-light-condensed-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Condensed by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-ItalicCondensed by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-italic-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldCondensed by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldCondensedItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-italic-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackCondensed by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-condensed/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackCondensedItalic by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-condensed-italic/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldCondensedOutline by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-condensed-outline/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-LightExtended by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-light-extended/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-Extended by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-extended/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BoldExtended by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-bold-extended/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * Webfont: Swiss721BT-BlackExtended by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/swiss-721/std-black-extended/
+ * Copyright: Copyright &amp;#x00A9; 1990 -2018 MyFonts Inc. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d3151");
+  
+@font-face {
+  font-family: "ConduitITCPro-Regular";
+  src: url('webFonts/ConduitITCProRegular/font.woff2') format('woff2'), url('webFonts/ConduitITCProRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackExtended";
+  src: url('webFonts/Swiss721BTBlackExtended/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackExtended/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-Bold";
+  src: url('webFonts/ConduitITCProBold/font.woff2') format('woff2'), url('webFonts/ConduitITCProBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Extended";
+  src: url('webFonts/Swiss721BTExtended/font.woff2') format('woff2'), url('webFonts/Swiss721BTExtended/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldExtended";
+  src: url('webFonts/Swiss721BTBoldExtended/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldExtended/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-LightExtended";
+  src: url('webFonts/Swiss721BTLightExtended/font.woff2') format('woff2'), url('webFonts/Swiss721BTLightExtended/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-BoldItalic";
+  src: url('webFonts/ConduitITCProBoldItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldCondensedOutline";
+  src: url('webFonts/Swiss721BTBoldCondensedOutline/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldCondensedOutline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-ExtraLightItalic";
+  src: url('webFonts/ConduitITCProExtraLightItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProExtraLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-ExtraLight";
+  src: url('webFonts/ConduitITCProExtraLight/font.woff2') format('woff2'), url('webFonts/ConduitITCProExtraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackCondensed";
+  src: url('webFonts/Swiss721BTBlackCondensed/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackCondensed/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldCondensedItalic";
+  src: url('webFonts/Swiss721BTBoldCondensedItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldCondensedItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackCondensedItalic";
+  src: url('webFonts/Swiss721BTBlackCondensedItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackCondensedItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-ItalicCondensed";
+  src: url('webFonts/Swiss721BTItalicCondensed/font.woff2') format('woff2'), url('webFonts/Swiss721BTItalicCondensed/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Condensed";
+  src: url('webFonts/Swiss721BTCondensed/font.woff2') format('woff2'), url('webFonts/Swiss721BTCondensed/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldCondensed";
+  src: url('webFonts/Swiss721BTBoldCondensed/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldCondensed/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-LightCondensedItalic";
+  src: url('webFonts/Swiss721BTLightCondensedItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTLightCondensedItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-LightCondensed";
+  src: url('webFonts/Swiss721BTLightCondensed/font.woff2') format('woff2'), url('webFonts/Swiss721BTLightCondensed/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackOutline";
+  src: url('webFonts/Swiss721BTBlackOutline/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackOutline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldOutline";
+  src: url('webFonts/Swiss721BTBoldOutline/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldOutline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Black";
+  src: url('webFonts/Swiss721BTBlack/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackItalic";
+  src: url('webFonts/Swiss721BTBlackItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-HeavyItalic";
+  src: url('webFonts/Swiss721BTHeavyItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTHeavyItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Heavy";
+  src: url('webFonts/Swiss721BTHeavy/font.woff2') format('woff2'), url('webFonts/Swiss721BTHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BlackNo2";
+  src: url('webFonts/Swiss721BTBlackNo2/font.woff2') format('woff2'), url('webFonts/Swiss721BTBlackNo2/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Medium";
+  src: url('webFonts/Swiss721BTMedium/font.woff2') format('woff2'), url('webFonts/Swiss721BTMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Bold";
+  src: url('webFonts/Swiss721BTBold/font.woff2') format('woff2'), url('webFonts/Swiss721BTBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-MediumItalic";
+  src: url('webFonts/Swiss721BTMediumItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTMediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-BoldItalic";
+  src: url('webFonts/Swiss721BTBoldItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Italic";
+  src: url('webFonts/Swiss721BTItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-LightItalic";
+  src: url('webFonts/Swiss721BTLightItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Light";
+  src: url('webFonts/Swiss721BTLight/font.woff2') format('woff2'), url('webFonts/Swiss721BTLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Regular";
+  src: url('webFonts/Swiss721BTRegular/font.woff2') format('woff2'), url('webFonts/Swiss721BTRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-ThinItalic";
+  src: url('webFonts/Swiss721BTThinItalic/font.woff2') format('woff2'), url('webFonts/Swiss721BTThinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Swiss721BT-Thin";
+  src: url('webFonts/Swiss721BTThin/font.woff2') format('woff2'), url('webFonts/Swiss721BTThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-SemiBold";
+  src: url('webFonts/RecoletaAltSemiBold/font.woff2') format('woff2'), url('webFonts/RecoletaAltSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Light";
+  src: url('webFonts/RecoletaAltLight/font.woff2') format('woff2'), url('webFonts/RecoletaAltLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Regular";
+  src: url('webFonts/RecoletaAltRegular/font.woff2') format('woff2'), url('webFonts/RecoletaAltRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Light";
+  src: url('webFonts/RecoletaLight/font.woff2') format('woff2'), url('webFonts/RecoletaLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Regular";
+  src: url('webFonts/RecoletaRegular/font.woff2') format('woff2'), url('webFonts/RecoletaRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-SemiBold";
+  src: url('webFonts/RecoletaSemiBold/font.woff2') format('woff2'), url('webFonts/RecoletaSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Thin";
+  src: url('webFonts/RecoletaAltThin/font.woff2') format('woff2'), url('webFonts/RecoletaAltThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Medium";
+  src: url('webFonts/RecoletaAltMedium/font.woff2') format('woff2'), url('webFonts/RecoletaAltMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Bold";
+  src: url('webFonts/RecoletaAltBold/font.woff2') format('woff2'), url('webFonts/RecoletaAltBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Thin";
+  src: url('webFonts/RecoletaThin/font.woff2') format('woff2'), url('webFonts/RecoletaThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Bold";
+  src: url('webFonts/RecoletaBold/font.woff2') format('woff2'), url('webFonts/RecoletaBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Medium";
+  src: url('webFonts/RecoletaMedium/font.woff2') format('woff2'), url('webFonts/RecoletaMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "RecoletaAlt-Black";
+  src: url('webFonts/RecoletaAltBlack/font.woff2') format('woff2'), url('webFonts/RecoletaAltBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-Black";
+  src: url('webFonts/RecoletaBlack/font.woff2') format('woff2'), url('webFonts/RecoletaBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Recoleta-RegularDEMO";
+  src: url('webFonts/RecoletaRegularDEMO/font.woff2') format('woff2'), url('webFonts/RecoletaRegularDEMO/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-Medium";
+  src: url('webFonts/ConduitITCProMedium/font.woff2') format('woff2'), url('webFonts/ConduitITCProMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-MediumItalic";
+  src: url('webFonts/ConduitITCProMediumItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProMediumItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-Black";
+  src: url('webFonts/ConduitITCProBlack/font.woff2') format('woff2'), url('webFonts/ConduitITCProBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-LightItalic";
+  src: url('webFonts/ConduitITCProLightItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-Light";
+  src: url('webFonts/ConduitITCProLight/font.woff2') format('woff2'), url('webFonts/ConduitITCProLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-BlackItalic";
+  src: url('webFonts/ConduitITCProBlackItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-ExtraBoldItalic";
+  src: url('webFonts/ConduitITCProExtraBoldItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProExtraBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-Italic";
+  src: url('webFonts/ConduitITCProItalic/font.woff2') format('woff2'), url('webFonts/ConduitITCProItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ConduitITCPro-ExtraBold";
+  src: url('webFonts/ConduitITCProExtraBold/font.woff2') format('woff2'), url('webFonts/ConduitITCProExtraBold/font.woff') format('woff');
+}
+

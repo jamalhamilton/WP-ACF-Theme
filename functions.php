@@ -140,7 +140,8 @@ add_action( 'widgets_init', 'amc_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function amc_theme_scripts() {
-	wp_enqueue_style( 'the-clubhouse-network-theme', get_template_directory_uri() . '/css/theme.css' );
+	wp_enqueue_style( 'amc-theme-file', get_template_directory_uri() . '/css/theme.css' );
+	wp_enqueue_style( 'amc-font-file', get_template_directory_uri() . '/assets/fonts/MyFontsWebfontsKit.css' );
 	wp_enqueue_style( 'amc-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'amc-theme-style', 'rtl', 'replace' );
 
