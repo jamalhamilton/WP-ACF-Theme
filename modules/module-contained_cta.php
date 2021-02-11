@@ -1,29 +1,24 @@
-<section class="container">
-
-<?php if( get_row_layout() == 'contained_cta' ): ?>        
-  <div class="left-half">
-    <article>
-    <?php if(get_sub_field('vertical_title')!=''){ ?>
-      <h2 class="verticle_title"><?php  echo the_sub_field('vertical_title'); ?></h2>
-    <?php } ?>
-    <?php if(get_sub_field('headline')!=''){ ?> 
-      <h1><?php echo the_sub_field('headline'); ?></h1>
-    <?php } ?> 
-    <?php if(get_sub_field('copy')!=''){ ?>   
-      <p><?php echo the_sub_field('copy'); ?></p> 
-    <?php } ?>    
-    <?php if(get_sub_field('cta')!=''){ ?>  
-        <?php $array= get_sub_field('cta'); ?>  
-        <a class="cta_link" href="<?php print_r($array['url']); ?>"><?php print_r($array['title']); ?></a>
-    <?php } ?>
-    </article>
-  </div>
-  <div class="right-half">
-    <?php if(get_sub_field('image')!=''){ ?>
-        <?php  $image = get_sub_field('image'); ?>
-        <?php echo wp_get_attachment_image($image); ?>
-    <?php } ?>    
-  </div> 
-  <?php endif; ?> 
-  
-</section>
+<?php 
+$settings = get_sub_field('settings');
+$headline = get_sub_field('headline');
+$vertical_title = get_sub_field('vertical_title');
+$copy = get_sub_field('copy');
+$cta = get_sub_field('cta');
+$image = get_sub_field('image');
+?>
+    <div class="contained_cta">
+        <div class="intro_text left_block">
+        <?php if(!empty($vertical_title)): ?>
+        <div class="vertcial_text">
+	          	<span><?php echo $vertical_title; ?></span>
+	      </div>        
+        <?php endif; ?>
+        <h2><?php echo $headline; ?></h2>
+          <p><?php echo $copy; ?></p>
+          <?php if(!empty($cta)){ ?>          
+            <a class="contained_cta_link" href="<?php print_r($cta['url']); ?>"><?php print_r($cta['title']); ?> <i class="fas fa-long-arrow-alt-right"></i></a>
+          <?php } ?>
+          
+        </div>       
+        <div class="contained_cta right_block" style="background-image: url(<?php echo  $image ['url'] ; ?>);"></div>
+        </div>  
