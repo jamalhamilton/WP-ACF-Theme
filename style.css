@@ -98,7 +98,79 @@ a.contained_cta_link:visited { text-decoration: none;}
   background-position: center center;
   background-size: cover;
   width: 50%;
-  padding: 1%; }
+  padding: 1%; 
+}
+/*---50/50 Full Bleed CTA----*/
+.fullbleed_with_text5050 {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #000000;}
+.fullbleed_with_text5050 h2{color:#fff; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; margin-bottom: 1em; font-family: 'RecoletaAlt-Bold'; 
+}
+.fullbleed_with_text5050 p{color: #fff;margin-bottom: 3em;}
+
+  a.fullbleed_cta_link5050:link { color:#fff; text-decoration: none; font-weight: 500; font-size: 18px; }
+  .fullbleed_with_text5050 .left_block {
+    width: 50%;
+    padding-left: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 6%;
+    border-right: 1px solid #fff;
+    margin: 40px 0px;
+}
+.fullbleed_with_text5050 .right_block {
+  width: 50%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 6%;
+  margin: 40px 0;
+}
+/*------Left Content Right Image Cta---*/
+.module_left_content_right_image_cta {box-shadow: 0px 9px 17px #00000029; padding: 78px; width:100%;}
+.left_content_right_image_cta_section{
+display: flex;
+flex-wrap: wrap;
+}
+
+.left_content_right_image_cta_section .left_area{
+width: 65%
+}
+.left_content_right_image_cta_section .left_area h2{
+font-size: 50px; line-height: 65px; letter-spacing: 1px;font-family: 'RecoletaAlt-Bold';
+}
+.left_content_right_image_cta_section .left_area p{ font-size: 18px; line-height: 35px; letter-spacing: 1px;font-family: "Swiss721BT-Regular";}
+.left_content_right_image_cta_section .left_area ul { padding: 0; margin: 0; list-style: none; }
+.left_content_right_image_cta_section .left_area ul li a{font-size: 25px; line-height: 30px; margin-bottom: 20px; letter-spacing: 1px; color: #000; font-family: "Swiss721BT-Bold"; text-decoration: none; }
+.left_content_right_image_cta_section .left_area ul li a:hover{border-bottom: 2px solid#000;}
+.left_content_right_image_cta_section .right_area{
+width: 32%; padding-left: 2%;
+}
+/* farm logos module*/
+.farm_logos { display: flex; flex-wrap: wrap; width: 100%; align-items: center; }
+.farm_logos li{ width:18%; list-style: none; padding:0 2%; }
+/*-----------Fullbleed Content Module---*/
+.fullbleed_content {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9;}
+.fullbleed_content .intro_text.right_block {width: 50%; padding-left: 8%; padding-top: 10%; padding-bottom: 10%; padding-right: 10%;}
+.fullbleed_content .intro_text.left_block { width: 50%; padding-left: 10%; padding-top: 10%; padding-bottom: 10%; padding-right: 8%;}
+
+.fullbleed_content .intro_text h2{color:#fff; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold';}
+.fullbleed_content .intro_text p{color:#fff; padding-top: 20px;}
+  a.fullbleed_content_link:link { color:#fff; text-decoration: none; font-weight: 500; font-size: 18px; }
+  a.fullbleed_content_link:visited { text-decoration: none; }
+  .fullbleed_content_image.left_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:50%; min-height: 400px;
+  }
+  .fullbleed_content_image.right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:50%; min-height: 400px;
+  }
+  /*---------Timely content 3 column----------*/
+  .timely_content_row{ display: flex; flex-wrap: wrap; margin: 0 -20px; }
+.featured_image_timely_content_3_column_section h2{
+font-size: 50px; line-height: 55px; letter-spacing: 1px;font-family: 'RecoletaAlt-Bold';
+}
+.timely_content_3_column{ width: 30%; margin: 0 20px; }
+.timely_content_3_column h3{ font-size: 35px; line-height: 65px; letter-spacing: 1px;font-family: 'RecoletaAlt-Bold';}
+.timely_content_3_column span{ display: block; }
+.timely_content_3_column p{font-size: 18px; line-height: 35px; letter-spacing: 1px;font-family: "Swiss721BT-Regular";}
+.timely_content_3_column span a{font-size: 25px; line-height: 30px; margin-bottom: 20px; letter-spacing: 1px; color: #000; font-family: "Swiss721BT-Bold"; text-decoration: none; }
+.featured_image_timely_content_3_column_section figure{ background-repeat: no-repeat; background-position:center center; background-size: cover; min-height: 768px;}
 /*--------------------*/
 @media(max-width:1440px) {
 .vertcial_text { top: 45%; width: 25%;}
@@ -108,6 +180,30 @@ a.contained_cta_link:visited { text-decoration: none;}
 
 }
 @media(max-width:767px) {
+  .timely_content_3_column{ width: 100%; }
+.timely_content_3_column h3{ font-size: 30px;line-height: 35px;}
+.timely_content_3_column h2{font-size: 25px;line-height: 30px;}
+.timely_content_3_column span a{font-size: 20px;line-height: 25px;}
+
+.fullbleed_content .intro_text.right_block {width: 100%; }
+.fullbleed_content .intro_text.left_block { width: 100%; }
+.fullbleed_content_image.left_block{ width:100%; }
+.fullbleed_content_image.right_block{ width:100%; }
+  .farm_logos li{ width:48%; list-style: none; padding:0 2%; }
+  .fullbleed_with_text5050 .left_block {
+    width: 100%;
+    border-right: 0px; padding: 5%;
+    border-bottom: 1px solid #fff;
+    margin: 20px 30px;}
+  .fullbleed_with_text5050 .right_block {
+    width: 100%; padding: 5%;
+    margin: 20px 30px;}
+  .left_content_right_image_cta_section .left_area{
+    width: 100%
+    }
+    .left_content_right_image_cta_section .right_area{
+      width: 100%; padding-left: 0%;
+      }
   .fullbleed_with_text .intro_text.left_block {
     width: 100%;}
   .fullbleed_image.right_block{ width: 100%;}
@@ -143,6 +239,6 @@ a.contained_cta_link:visited { text-decoration: none;}
 
 }
 @media(max-width:480px) {
-
+  .farm_logos li{ width:100%; list-style: none; padding:0 2%; }
 }
 /*# sourceMappingURL=map/theme.css.map */

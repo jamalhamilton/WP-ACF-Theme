@@ -5,6 +5,8 @@ $vertical_title = get_sub_field('vertical_title');
 $copy = get_sub_field('copy');
 $cta = get_sub_field('cta');
 $image = get_sub_field('image');
+
+
 ?>
     <div class="contained_cta">
         <div class="intro_text left_block">
@@ -22,5 +24,7 @@ $image = get_sub_field('image');
         </div>       
         <div class="contained_cta right_block" style="background-image: url(<?php //echo  $image ['url'] ; ?>);">
       <img src="<?php echo  $image ['url'] ; ?>">
+
+
     </div>
         </div>  
