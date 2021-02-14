@@ -25,7 +25,14 @@
 				get_template_part( '/modules/module', 'full_bleed_content' );
 		
 		elseif(get_row_layout() == 'featured_image_&_timely_content_3-column'):
-				get_template_part( '/modules/module', 'featured_image_timely_content_3-column' );		
+				get_template_part( '/modules/module', 'featured_image_timely_content_3-column' );
+		
+		elseif(get_row_layout() == 'contact_us'):
+				get_template_part( '/modules/module', 'contact_us' );
+
+		elseif(get_row_layout() == 'left_content_right_image_cta_2'):
+				get_template_part( '/modules/module', 'left_content_right_image_cta_2' );
+
 		endif;
 	?>
 
