@@ -179,3 +179,12 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+//ACF API KEY
+function my_acf_init() {
+
+	acf_update_setting('google_api_key', 'AIzaSyAmtMwBA8YsZ746qVd3TEDrpWLnvQktvh8');
+}
+
+add_action('acf/init', 'my_acf_init');
