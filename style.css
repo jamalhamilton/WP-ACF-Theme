@@ -57,7 +57,7 @@ html, body, section {
 * { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-text-size-adjust: none; }
 html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; background: #fff; }
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
-.content-flexible { max-width: 1674px; margin-left: auto; margin-right: auto; padding: 20px}
+.content-flexible { max-width: 1422px;/*1674px*/ margin-left: auto; margin-right: auto; padding: 20px}
 .content-flexible-hero_body{ margin-bottom: 60px;}
 .hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 650px;}
 .hero_image_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;}
@@ -180,7 +180,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1px;font-family: 'RecoletaAl
 .contact_us_module_content { width: 100%; padding: 10px; }
 /*----------Left Content Right Image CTA (2)-----------*/
 .left_content_right_image_cta_2 {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;  padding:0 10%;}
-.left_content_right_image_cta_2 .intro_text {width: 50%; padding-top: 5%; padding-bottom: 5%; padding-left: 0%; padding-right: 5%;}
+.left_content_right_image_cta_2 .intro_text {width: 50%; padding-top: 5%; padding-bottom: 5%; padding-left: 5%; padding-right: 5%;}
 .left_content_right_image_cta_2 .intro_text h2{color:#000; font-size: 40px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; 
 }
 .left_content_right_image_cta_2 .intro_text p{color:#000; padding-top: 20px;}
@@ -188,7 +188,83 @@ font-size: 50px; line-height: 55px; letter-spacing: 1px;font-family: 'RecoletaAl
 .left_content_right_image_cta_2 a.contained_cta_link:visited { text-decoration: none;}
 .left_content_right_image_cta_2 .right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover;
   width: 50%; padding:0; }
-/*--------------------------*/
+/*----------Accordian Module----------------*/
+.accordion-container{
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  }
+  
+  .events_accordion_section .set{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #d9d8d6;
+  margin-bottom: 17px;
+  }
+  .events_accordion_section .set > a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px; line-height: 40px;
+  font-family: "Swiss721BT-Bold";
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+  }
+  .events_accordion_section .set > a i{
+  float: right;
+  margin-top: 2px;
+  background-image: url(assets/images/plus_icon.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  }
+  .events_accordion_section .set > a.active i{
+  background-image: url(assets/images/minus_icon.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  }
+  .events_accordion_section .set > a.active{
+  background-color:#000;
+  color: #fff;
+  }
+  .events_accordion_section .content{
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display:block;
+  }
+  .events_accordion_section .content p{
+  padding: 10px 15px;
+  margin: 0;
+  color: #000;
+  font-size: 18px; line-height: 28px;
+  font-family: "Swiss721BT-Regular";
+  }
+  .events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
+  .events_accordion_section .plus-icon { width: 53px;
+  height: 53px;
+  
+  }
+  .events_section li{ width: 48%; padding: 0 1% 1% 0; }
+  
+  .event_detail span { display: block; }
+  
+  .event_detail_section {display: flex; flex-wrap: wrap; }
+  .event_detail_section figure{ width: 4%; padding: 0 1% 0 0; margin: 0;}
+  .event_detail_section .event_detail{ width: 94%; }
+  .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";}
+/*-----------Flexible Content Module------------------*/
+.flexible_content_hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 650px;}
+.flexible_content_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;}
+.flexible_content_with_text .intro_text { width:85%; padding-left: 15%;  padding-top: 5%;}
+.flexible_content_with_text .intro_text h2{ font-size: 50px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; }
+.flexible_content_with_text .intro_text p{padding-top: 20px;}
+.flexible_content_with_text .intro_text .half_width{width:50%;}
+/*-----------------------------*/
 @media(max-width:1440px) {
 .vertcial_text { top: 45%; width: 25%;}
 .hero_image_with_text .intro_text h2{ font-size: 40px;}
@@ -197,8 +273,11 @@ font-size: 50px; line-height: 55px; letter-spacing: 1px;font-family: 'RecoletaAl
 
 }
 @media(max-width:767px) {
-  .left_content_right_image_cta_2 .intro_text {width: 100%;}
-  .left_content_right_image_cta_2 .right_block{width:100%}
+.flexible_content_with_text .intro_text {width: 100%; padding-left: 5%; padding-top: 5%;}
+.flexible_content_with_text .intro_text .half_width{width:100%;}
+.events_section li { width: 100%; }
+.left_content_right_image_cta_2 .intro_text {width: 100%;}
+.left_content_right_image_cta_2 .right_block{width:100%}
 .timely_content_3_column{ width: 100%; }
 .timely_content_3_column h3{ font-size: 30px;line-height: 35px;}
 .timely_content_3_column h2{font-size: 25px;line-height: 30px;}

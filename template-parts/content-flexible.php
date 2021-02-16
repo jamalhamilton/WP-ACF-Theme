@@ -32,6 +32,12 @@
 
 		elseif(get_row_layout() == 'left_content_right_image_cta_2'):
 				get_template_part( '/modules/module', 'left_content_right_image_cta_2' );
+		
+		elseif(get_row_layout() == 'events_accordion'):
+				get_template_part( '/modules/module', 'events_accordion' );
+		
+		elseif(get_row_layout() == 'flexible_content'):
+				get_template_part( '/modules/module', 'flexible_content' );				
 
 		endif;
 	?>
