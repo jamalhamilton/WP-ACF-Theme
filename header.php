@@ -25,14 +25,16 @@
 	<?php wp_head(); ?>
 	<script>
 	jQuery(document).ready(function() {
+		jQuery(".content-flexible .set:first-child a").addClass("active");
+		jQuery(".content-flexible .set:first-child").addClass("active");
   jQuery(".set > a").on("click", function() {
     if (jQuery(this).hasClass("active")) {
 		jQuery(this).removeClass("active");
 		jQuery(this).siblings(".content").slideUp(200);
-		jQuery(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+		jQuery(".set > a i").removeClass("minus-icon").addClass("plus-icon");
     } else {
-		jQuery(".set > a i").removeClass("fa-minus").addClass("fa-plus");
-		jQuery(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+		jQuery(".set > a i").removeClass("minus-icon").addClass("plus-icon");
+		jQuery(this).find("i").removeClass("plus-icon").addClass("minus-icon");
 		jQuery(".set > a").removeClass("active");
 		jQuery(this).addClass("active");
 		jQuery(".content").slideUp(200);

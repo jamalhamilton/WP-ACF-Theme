@@ -37,7 +37,13 @@
 				get_template_part( '/modules/module', 'events_accordion' );
 		
 		elseif(get_row_layout() == 'flexible_content'):
-				get_template_part( '/modules/module', 'flexible_content' );				
+				get_template_part( '/modules/module', 'flexible_content' );
+
+		elseif(get_row_layout() == 'timely_content_2-column'):
+				get_template_part( '/modules/module', 'timely_content_2-column' );
+
+		elseif(get_row_layout() == 'featured_content'):
+				get_template_part( '/modules/module', 'featured_content' );		
 
 		endif;
 	?>
