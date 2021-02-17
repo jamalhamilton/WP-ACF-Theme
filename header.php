@@ -26,7 +26,7 @@
 	<script>
 	jQuery(document).ready(function() {
 		jQuery(".content-flexible .set:first-child a").addClass("active");
-		jQuery(".content-flexible .set:first-child").addClass("active");
+		jQuery(".content-flexible .set:first-child").addClass("active");		
   jQuery(".set > a").on("click", function() {
     if (jQuery(this).hasClass("active")) {
 		jQuery(this).removeClass("active");
@@ -43,6 +43,7 @@
 	return false;
   });
 });
+
 </script>
 </head>
 

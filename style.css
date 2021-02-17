@@ -189,8 +189,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1px;font-family: 'RecoletaAl
 .left_content_right_image_cta_2 .right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover;
   width: 50%; padding:0; }
 /*----------Accordian Module----------------*/
-.accordion-container{ position: relative; width: 100%; height: auto;  }
-  
+.accordion-container{ position: relative; width: 100%; height: auto;  }  
   .events_accordion_section .set{ position: relative; width: 100%; height: auto; background-color: #d9d8d6; margin-bottom: 17px;  }
   .events_accordion_section .set > a{ display: block; padding: 10px 15px; text-decoration: none; color: #000; font-size: 30px; line-height: 40px;
   font-family: "Swiss721BT-Bold"; -webkit-transition:all 0.2s linear;  -moz-transition:all 0.2s linear;  transition:all 0.2s linear;  }
@@ -237,7 +236,57 @@ a.timely_content_2columnlink:link { color:rgb(0, 0, 0); text-decoration: none; f
 .featured_content_with_text .intro_text h2{ font-size: 50px; line-height: 54px; letter-spacing: 4.5px; font-family: 'RecoletaAlt-Bold'; }
 .featured_content_with_text .intro_text p{padding-top: 20px;}
 .featured_content_with_text .intro_text .featured_content_link{color: #000; text-decoration: none; font-weight: 500; font-size: 18px;}
-
+/*-----------Timely Content 3 Column Module--------------*/
+.timely_content_3column {display: flex; flex-wrap: wrap; position: relative; width: 100%; padding: 0 5%;}
+.timely_content_3column .card_image { background-size: cover; background-position: center center; min-height: 270px;}
+.timely_content_3column .main_title{width: 100%; padding-left: 2%; padding-top: 2%; padding-bottom: 2%; padding-right: 6%;}
+.timely_content_3column .left_block {width: 33%; padding-left: 2%; padding-right: 2%; padding-bottom: 5%; }
+.timely_content_3column .left_block.last {}
+.timely_content_3column h2{color: rgb(0, 0, 0);  font-size: 35px;  line-height: 30px;  letter-spacing: 4.5px;  margin-bottom: 30px;  margin-top: 30px;
+  font-family: 'RecoletaAlt-Bold';}
+.timely_content_3column p{color: rgb(0, 0, 0);margin-bottom: 3em;}
+a.timely_content_3columnlink:link { color:rgb(0, 0, 0); text-decoration: none; font-weight: 500; font-size: 18px; }
+/*----------FAQ Accordian-------------*/
+.accordion-container{ position: relative; width: 100%; height: auto;  }
+.accordion-container .content-flexible {  padding: 20px 10%;}
+  .faq_accordion_section .faq_set{ position: relative; width: 100%; height: auto; background-color: #d9d8d6; margin-bottom: 17px;  }
+  .faq_accordion_section .faq_set > a{ display: block; padding: 10px 15px; text-decoration: none; color: #000; font-size: 30px; line-height: 40px;
+  font-family: "Swiss721BT-Bold"; -webkit-transition:all 0.2s linear;  -moz-transition:all 0.2s linear;  transition:all 0.2s linear;  }
+  .faq_accordion_section .faq_set > a i{  float: right;  margin-top: 2px;  background-image: url(assets/images/plus_icon.png);  background-repeat: no-repeat;
+  width: 30px;  height: 30px;  }
+  .faq_accordion_section .faq_set > a.active i{  background-image: url(assets/images/minus_icon.png);  background-repeat: no-repeat;  width: 30px;
+  height: 30px;  }
+  .faq_accordion_section .faq_set > a.active{  background-color:#000;  color: #fff;  }
+  .faq_accordion_section .faq_content{  background-color: #fff;  border-bottom: 1px solid #ddd;  display:none;  }
+  .faq_accordion_section .faq_set.active .faq_content{ display: block; }
+  .faq_accordion_section h2.faq_title{line-height: 60px; margin-bottom: 15px; font-size: 50px; font-family: 'RecoletaAlt-Bold';}
+  .faq_accordion_section .faq_content h2.event_title { line-height: 44px; margin-bottom: 5px;}
+  .faq_accordion_section .faq_content p{margin: 0; color: #000; font-size: 18px; line-height: 28px; font-family: "Swiss721BT-Regular";  }
+  .faq_accordion_section .faq_events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
+  .faq_accordion_section .plus-icon { width: 53px; height: 53px; }
+  .faq_accordion_section .faq_events_section li{width: 100%; padding: 2% 5%;}  
+   .faq_accordion_section .event_detail_section {display: flex; flex-wrap: wrap; }
+  .faq_accordion_section .event_detail_section .event_detail{ width: 94%; }
+  .faq_accordion_section .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";}
+/*-----------Conservation Content Module--------------*/
+.conservation_banner_image{background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100%; padding: 0%;}
+.conservation_content {display: flex; flex-wrap: wrap; position: relative; width: 100%; padding: 0 5%;}
+.conservation_content .card_image { background-size: cover; background-position: center center; min-height: 270px;}
+.conservation_content .main_title{width: 100%; padding-left: 2%; padding-top: 2%; padding-bottom: 2%; padding-right: 6%;}
+.conservation_content .left_block {width: 33%; padding-left: 2%; padding-right: 2%; padding-bottom: 5%; }
+.conservation_content .left_block.last {}
+.conservation_content .main_title h2{color: rgb(0, 0, 0);  font-size: 50px;}
+.conservation_content h2{color: rgb(0, 0, 0);  font-size: 35px;  line-height: 30px;  letter-spacing: 4.5px;  margin-bottom: 30px;  margin-top: 30px;
+  font-family: 'RecoletaAlt-Bold';}
+.conservation_content p{color: rgb(0, 0, 0);margin-bottom: 1em;}
+a.conservation_contentlink:link { color:rgb(0, 0, 0); text-decoration: none; font-weight: 500; font-size: 18px; }
+/*-----------Full Bleed Grid 3 Column Module--------------*/
+.fullbleed_grid_3column {display: flex; flex-wrap: wrap; position: relative; width: 100%; padding: 0;}
+.fullbleed_grid_3column .card_image { background-size: cover; background-position: center center; min-height: 460px;}
+.fullbleed_grid_3column .left_block {width: 33%;}
+.fullbleed_grid_3column h2{letter-spacing: 2px; font-family: 'RecoletaAlt-Bold'; position: absolute; bottom: 0px; padding: 3%; width: 33%;}
+a.fullbleed_grid_3columnlink{ color: rgb(255, 255, 255); text-decoration: none; font-weight: 500; font-size: 40px; line-height: 42px; }
+  /*-----------------------*/
 
 
 
@@ -249,6 +298,9 @@ a.timely_content_2columnlink:link { color:rgb(0, 0, 0); text-decoration: none; f
 
 }
 @media(max-width:767px) {
+.fullbleed_grid_3column .left_block {width: 100%;}
+.conservation_content .left_block {width: 100%;}
+.timely_content_3column .left_block {width: 100%;}
 .timely_content_2column .left_block {width: 100%; }
 .timely_content_2column .left_block.left{padding: 5%;}
 .timely_content_2column .left_block.right{padding: 5%;}

@@ -4,10 +4,10 @@
 	<?php //get_template_part( '/modules/module', get_row_layout() ); ?>
 
 	<?php if( get_row_layout() == 'contained_cta' ):
-		 	get_template_part( '/modules/module', 'contained_cta' ); 
+		 	    get_template_part( '/modules/module', 'contained_cta' ); 
 		
 		elseif(get_row_layout() == 'full_bleed_cta'):
-			get_template_part( '/modules/module', 'full_bleed_cta' );
+			    get_template_part( '/modules/module', 'full_bleed_cta' );
 		
 		elseif(get_row_layout() == 'hero_body'):
 				get_template_part( '/modules/module', 'hero_body' );
@@ -43,8 +43,19 @@
 				get_template_part( '/modules/module', 'timely_content_2-column' );
 
 		elseif(get_row_layout() == 'featured_content'):
-				get_template_part( '/modules/module', 'featured_content' );		
+				get_template_part( '/modules/module', 'featured_content' );	
+				
+		elseif(get_row_layout() == 'timely_content_3-column'):
+				get_template_part( '/modules/module', 'timely_content_3-column' );
+				
+		elseif(get_row_layout() == 'faq_accordions'):
+				get_template_part( '/modules/module', 'faq_accordions' );
+				
+		elseif(get_row_layout() == 'conservation_content_module'):
+				get_template_part( '/modules/module', 'conservation_content_module' );
 
+		elseif(get_row_layout() == 'full_bleed_grid_3-column'):
+				get_template_part( '/modules/module', 'full_bleed_grid_3-column' );				
 		endif;
 	?>
 
