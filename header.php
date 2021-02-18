@@ -22,6 +22,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_url');?>/js/flexslidermin.js"></script>
 	<?php wp_head(); ?>
 	<script>
 	jQuery(document).ready(function() {
@@ -42,6 +43,11 @@
     }
 	return false;
   });
+
+   jQuery('.flexslider').flexslider({
+		animation: "slide",
+		directionNav: false
+	});
 });
 
 </script>

@@ -250,7 +250,7 @@ a.timely_content_3columnlink:link { color:rgb(0, 0, 0); text-decoration: none; f
 .accordion-container{ position: relative; width: 100%; height: auto;  }
 .accordion-container .content-flexible {  padding: 20px 10%;}
   .faq_accordion_section .faq_set{ position: relative; width: 100%; height: auto; background-color: #d9d8d6; margin-bottom: 17px;  }
-  .faq_accordion_section .faq_set > a{ display: block; padding: 10px 15px; text-decoration: none; color: #000; font-size: 30px; line-height: 40px;
+  .faq_accordion_section .faq_set > a{ display: block; padding: 10px 20px; text-decoration: none; color: #000; font-size: 30px; line-height: 40px;
   font-family: "Swiss721BT-Bold"; -webkit-transition:all 0.2s linear;  -moz-transition:all 0.2s linear;  transition:all 0.2s linear;  }
   .faq_accordion_section .faq_set > a i{  float: right;  margin-top: 2px;  background-image: url(assets/images/plus_icon.png);  background-repeat: no-repeat;
   width: 30px;  height: 30px;  }
@@ -260,11 +260,11 @@ a.timely_content_3columnlink:link { color:rgb(0, 0, 0); text-decoration: none; f
   .faq_accordion_section .faq_content{  background-color: #fff;  border-bottom: 1px solid #ddd;  display:none;  }
   .faq_accordion_section .faq_set.active .faq_content{ display: block; }
   .faq_accordion_section h2.faq_title{line-height: 60px; margin-bottom: 15px; font-size: 50px; font-family: 'RecoletaAlt-Bold';}
-  .faq_accordion_section .faq_content h2.event_title { line-height: 44px; margin-bottom: 5px;}
+  .faq_accordion_section .faq_content h2.event_title { line-height: 44px; margin-bottom: 5px; font-family: 'RecoletaAlt-Bold';}
   .faq_accordion_section .faq_content p{margin: 0; color: #000; font-size: 18px; line-height: 28px; font-family: "Swiss721BT-Regular";  }
   .faq_accordion_section .faq_events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
   .faq_accordion_section .plus-icon { width: 53px; height: 53px; }
-  .faq_accordion_section .faq_events_section li{width: 100%; padding: 2% 5%;}  
+  .faq_accordion_section .faq_events_section li{width: 100%; padding: 2% 3%;}  
    .faq_accordion_section .event_detail_section {display: flex; flex-wrap: wrap; }
   .faq_accordion_section .event_detail_section .event_detail{ width: 94%; }
   .faq_accordion_section .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";}
@@ -286,8 +286,11 @@ a.conservation_contentlink:link { color:rgb(0, 0, 0); text-decoration: none; fon
 .fullbleed_grid_3column .left_block {width: 33%;}
 .fullbleed_grid_3column h2{letter-spacing: 2px; font-family: 'RecoletaAlt-Bold'; position: absolute; bottom: 0px; padding: 3%; width: 33%;}
 a.fullbleed_grid_3columnlink{ color: rgb(255, 255, 255); text-decoration: none; font-weight: 500; font-size: 40px; line-height: 42px; }
-  /*-----------------------*/
+  /*---------Hero Carousel-----------*/
 
+
+
+  /*---------------------------*/
 
 
 @media(max-width:1440px) {

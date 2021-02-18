@@ -26,8 +26,9 @@ if( have_rows('accordions') ): ?>
 <div class="faq_accordion_section">
 <div class="accordion-container">
     
-    <div class="content-flexible faqaccord">
+    <div class="content-flexible">
     <h2 class="faq_title"><?php echo $title; ?></h2>
+    <div class="faqaccord">
         <?php while( have_rows('accordions') ): the_row();
                 $subtitle = get_sub_field('title'); 
         ?>  
@@ -56,7 +57,8 @@ if( have_rows('accordions') ): ?>
         <?php endif; ?>
         </div>
     </div>
-   <?php   endwhile; ?>
+    <?php   endwhile; ?>
+  </div>
 </div>
 </div>
 

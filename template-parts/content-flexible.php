@@ -56,6 +56,9 @@
 
 		elseif(get_row_layout() == 'full_bleed_grid_3-column'):
 				get_template_part( '/modules/module', 'full_bleed_grid_3-column' );				
+		
+		elseif(get_row_layout() == 'hero_carousel'):
+				get_template_part( '/modules/module', 'hero_carousel' );				
 		endif;
 	?>
 
