@@ -58,7 +58,14 @@
 				get_template_part( '/modules/module', 'full_bleed_grid_3-column' );				
 		
 		elseif(get_row_layout() == 'hero_carousel'):
-				get_template_part( '/modules/module', 'hero_carousel' );				
+				get_template_part( '/modules/module', 'hero_carousel' );
+				
+		elseif(get_row_layout() == 'leadership_accordions'):
+				get_template_part( '/modules/module', 'leadership_accordions' );
+				
+		elseif(get_row_layout() == 'tabbed_content'):
+				get_template_part( '/modules/module', 'tabbed_content' );
+					
 		endif;
 	?>
 
