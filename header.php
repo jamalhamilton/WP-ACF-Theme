@@ -28,7 +28,7 @@
 	<script>
 	jQuery(document).ready(function() {
 		jQuery(".content-flexible .set:first-child a").addClass("active");
-		jQuery(".content-flexible .set:first-child").addClass("active");		
+		jQuery(".content-flexible .set:first-child").addClass("active");
   jQuery(".set > a").on("click", function() {
     if (jQuery(this).hasClass("active")) {
 		jQuery(this).removeClass("active");
@@ -61,7 +61,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/amc-logo-black.png" alt="logo">
+			<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AMC-Corporate-Lockup-black-RGB.svg" alt="logo"></a>
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -89,16 +89,49 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
-			?>
+			$menu = wp_get_nav_menu_object('primary-menu');
+			echo $menu;
+			if( have_rows('icon_links', 'term_22744') ): ?>
 			<ul class="icon-links">
-				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
-				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
-				<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bus-icon.png" alt=""></a></li>
-			</ul>
+				<?php
+			    while( have_rows('icon_links', 'term_22744') ) : the_row();
+					$link = get_sub_field('link');
+					$link_url = $link['url'];
+    			$link_title = $link['title'];
+    			$link_target = $link['target'] ? $link['target'] : '_self'; ?>
+						<li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><img src="<?php the_sub_field('icon'); ?>"><label><?php echo esc_html( $link_title ); ?></label></a></li>
+			    <?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
+
+			<?php if( have_rows('right_links', 'term_22744') ): ?>
 			<ul class="right-links">
-				<li><a href="#">Join</a></li>
-				<li><a href="#">Renew</a></li>
-				<li><a href="#">Donate</a></li>
-			</ul>
+				<?php
+			    while( have_rows('right_links', 'term_22744') ) : the_row();
+					$link = get_sub_field('link');
+					$link_url = $link['url'];
+    			$link_title = $link['title'];
+    			$link_target = $link['target'] ? $link['target'] : '_self'; ?>
+						<li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></li>
+			    <?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('#primary-menu > li > a').click(function(){
+					event.preventDefault();
+					if ($(this).parent().hasClass('expanded')) {
+						$('.site-header').removeClass('expanded');
+						$('#primary-menu > li').removeClass('expanded');
+					} else {
+						$('.site-header').addClass('expanded');
+						$('#primary-menu > li').removeClass('expanded');
+						$(this).parent().addClass('expanded');
+					}
+				});
+			});
+	</script>
