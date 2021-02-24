@@ -328,7 +328,58 @@ a.fullbleed_grid_3columnlink{ color: rgb(255, 255, 255); text-decoration: none; 
 .tabbed_location {font-size: 27px; line-height: 35px; font-family: "Swiss721BT-Regular"; }
 .tabbed_location strong{ font-family: "Swiss721BT-Bold";}
 .tabbed_box_content span{ display: flex; align-items: center; }
+/*blog detail*/
+.single h1{ font-size: 35px; line-height: 40px; font-family: 'RecoletaAlt-Bold'; }
+.post_header { display: flex; flex-wrap: wrap; justify-content: space-between;}
+.postmeta { display: flex; flex-wrap: wrap; }
+.head_col{ padding: 0 5px; }
+.post_detail .rt-reading-time .rt-label, .post_detail .rt-reading-time .rt-time{ display: none!important; }
+.single .featured_img{ text-align: center; }
+.single p{font-family: "Swiss721BT-Regular";}
+.
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+
+/*---Author Box in Blog Post (Blog post only)---*/
+h2.author_details {
+  color: #373839;
+  font-size: 30px;
+  font-family: 'Swiss721BT-Bold';
+  padding: 20px 0;
+}
+#authorboxsingle {
+	display: none;
+}
+.single-post #authorboxsingle {
+	display: block;
+}
+.authorboxsingle {
+  padding: 20px 20px 20px 0;
+  width: 100%;
+  float: left;
+  display: block;
+}
+.authorboxsingle.authormulti {
+  padding: 20px 20px 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.authorboxsingle.authormulti:last-child{
+  border-bottom: 0px;
+}
+.authorboxsinglename {
+font-size: 1.25rem;
+font-weight: bold;
+line-height: 1.4;
+}
+
 /*----------------------------*/
+
 @media(max-width:1440px) {
   .tabbed_content_section .tabbed_left_side h2{ font-size: 40px; line-height: 55px ;}
   .tabbed_box_content h3{font-size: 40px; line-height: 45px ; }
