@@ -91,10 +91,10 @@
 			);
 			$menu = wp_get_nav_menu_object('primary-menu');
 			echo $menu;
-			if( have_rows('icon_links', 'term_22744') ): ?>
+			if( have_rows('icon_links', 'term_22752') ): ?>
 			<ul class="icon-links">
 				<?php
-			    while( have_rows('icon_links', 'term_22744') ) : the_row();
+			    while( have_rows('icon_links', 'term_22752') ) : the_row();
 					$link = get_sub_field('link');
 					$link_url = $link['url'];
     			$link_title = $link['title'];
@@ -104,10 +104,10 @@
 				</ul>
 			<?php endif; ?>
 
-			<?php if( have_rows('right_links', 'term_22744') ): ?>
+			<?php if( have_rows('right_links', 'term_22752') ): ?>
 			<ul class="right-links">
 				<?php
-			    while( have_rows('right_links', 'term_22744') ) : the_row();
+			    while( have_rows('right_links', 'term_22752') ) : the_row();
 					$link = get_sub_field('link');
 					$link_url = $link['url'];
     			$link_title = $link['title'];
