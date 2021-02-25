@@ -1,0 +1,26 @@
+.entry-footer {
+  display: none;
+}
+
+.site-footer {
+  background-color: black;
+  min-height: 450px;
+  padding-top:90px;
+  * {color:white;}
+  .footer-column-container {
+    width: 100%;
+    max-width: 1400px;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-column {
+      width:30%;
+      .menu-footer-menu-container {
+        ul#footer-menu {
+          list-style: none;
+        }
+      }
+    }
+  }
+}

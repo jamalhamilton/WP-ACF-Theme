@@ -51,6 +51,7 @@ if ( ! function_exists( 'amc_theme_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'amc-theme' ),
+				'menu-2' => esc_html__( 'Footer Menu', 'amc-theme' ),
 			)
 		);
 

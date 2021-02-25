@@ -1,16 +1,9 @@
 @import 'starter';
 @import 'header';
 @import 'modules';
+@import 'footer';
 
-
-footer {
-  border-top: 2px solid black;
-}
-
-
-.content-flexible {
-  max-width:1200px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:20px;
+.site-main {
+  min-height: 70vh;
+  padding-top:100px;
 }
