@@ -51,7 +51,7 @@ get_header();
 					/
 					<?php 
                       
-					 echo do_shortcode('[rt_reading_time label="Reading Time:" postfix="minutes" postfix_singular="minute"]'); ?>
+					 echo do_shortcode('[rt_reading_time label="" postfix="minute read" postfix_singular="minute read"]'); ?>
 					
 				</div>
 			  </div>
@@ -62,13 +62,13 @@ get_header();
 					 echo do_shortcode('[Sassy_Social_Share]'); ?>
 			  </div>
 			</div>
-			    <?php 
+			    <!--<?php 
 						if ( has_post_thumbnail() ) {?>
 							<figure class="featured_img">
-						  <?php   the_post_thumbnail('single_featured_img'); ?>
+						  <?php   //the_post_thumbnail('single_featured_img'); ?>
 						</figure>
 					<?php 	}
-			    ?>
+			    ?>-->
               <div class="post_detail">
 			     <?php the_content(); ?>
               </div>

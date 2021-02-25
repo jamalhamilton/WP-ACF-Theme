@@ -45,7 +45,7 @@ add_image_size( 'hero-image', 1676, 655, true );
 add_image_size( 'annual-report-image', 326, 410, true );
 add_image_size( 'timely_content_3-column', 1426, 768, true );
 add_image_size( 'tabbed_content_img', 974, 599, true );
-
+add_image_size( 'single_featured_img', 1425, 625, true );
 
 
 /*Related Post Function*/

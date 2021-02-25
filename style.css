@@ -57,7 +57,7 @@ html, body, section {
 * { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-text-size-adjust: none; }
 html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; background: #fff; }
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
-.content-flexible { max-width: 1422px;/*1674px*/ margin-left: auto; margin-right: auto; padding: 20px}
+.content-flexible { float: left; max-width: 1422px;/*1674px*/ margin-left: auto; margin-right: auto; padding: 20px}
 .content-flexible-hero_body{ margin-bottom: 60px;}
 .hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 650px;}
 .hero_image_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;}
@@ -328,15 +328,15 @@ a.fullbleed_grid_3columnlink{ color: rgb(255, 255, 255); text-decoration: none; 
 .tabbed_location {font-size: 27px; line-height: 35px; font-family: "Swiss721BT-Regular"; }
 .tabbed_location strong{ font-family: "Swiss721BT-Bold";}
 .tabbed_box_content span{ display: flex; align-items: center; }
-/*blog detail*/
+/*---------blog detail-------------*/
 .single h1{ font-size: 35px; line-height: 40px; font-family: 'RecoletaAlt-Bold'; }
-.post_header { display: flex; flex-wrap: wrap; justify-content: space-between;}
+.post_header { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 10px 0;}
 .postmeta { display: flex; flex-wrap: wrap; }
-.head_col{ padding: 0 5px; }
+.head_col{ padding: 0 5px; font-family: 'Swiss721BT-Bold';}
+.head_col a{color: #000; text-decoration: none;}
 .post_detail .rt-reading-time .rt-label, .post_detail .rt-reading-time .rt-time{ display: none!important; }
 .single .featured_img{ text-align: center; }
-.single p{font-family: "Swiss721BT-Regular";}
-.
+.single p{font-family: "Swiss721BT-Regular";font-size: 18px; text-align: left; letter-spacing: 0.45px; color: #373839;}
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
@@ -347,11 +347,11 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 /*---Author Box in Blog Post (Blog post only)---*/
 .author_section { float: left; width: 100%; padding: 20px;}
-h2.author_details { color: #373839; font-size: 30px; font-family: 'Swiss721BT-Bold'; padding: 10px 0;}
+h2.author_details { color: #373839; font-size: 30px; font-family: 'Swiss721BT-Bold'; padding: 30px 0 10px;border-top: 2px solid #373839;}
 .single-post #authorboxsingle {	display: block;}
-.authorboxsingle { padding: 20px 20px 20px 0; width: 100%; float: left; display: block;}
-.authorboxsingle.authormulti { padding: 20px 20px 20px 0; width: 100%; border-bottom: 1px solid #000;}
-.authorboxsingle.authormulti:last-child{ border-bottom: 0px;}
+.authorboxsingle { padding: 20px 20px 20px 0; width: 100%; float: left; display: block;border-bottom: 2px solid #373839;}
+.authorboxsingle.authormulti { padding: 20px 20px 20px 0; width: 100%; border-bottom:none;}
+.authorboxsingle.authormulti:last-child{ border-bottom: 2px solid #373839;;}
 .authorboxsinglename {font-size: 1.25rem;font-weight: bold;line-height: 1.4;}
 
 /*--------Related Post Section---------*/
