@@ -45,3 +45,38 @@ add_image_size( 'hero-image', 1676, 655, true );
 add_image_size( 'annual-report-image', 326, 410, true );
 add_image_size( 'timely_content_3-column', 1426, 768, true );
 add_image_size( 'tabbed_content_img', 974, 599, true );
+
+
+
+/*Related Post Function*/
+function example_cats_related_post() {
+		global $post;
+		$current_category = get_the_category();
+
+		$same_category = new WP_Query(array(
+			'cat'            => $current_category[0]->cat_ID,
+			'post__not_in'   => array($post->ID),
+			'orderby'        => 'rand',
+			'posts_per_page' => 3
+		));
+		?>
+			<div class="related_title"><h1>Recommended Posts</h1></div>
+			<div class="related_posts">		
+			<?php while ( $same_category->have_posts() ) : $same_category->the_post(); ?>
+			
+				<div class="box_container">
+						<?php 
+								if ( has_post_thumbnail() ) {?>
+									<figure class="box_featured_img">
+								<?php   the_post_thumbnail('single_featured_img'); ?>
+								</figure>
+						<?php 	}
+						?>
+				<p class="reading_time_title"><?php echo do_shortcode('[rt_reading_time label="" postfix="minute read" postfix_singular="minute read"]');  ?></p>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				</div>
+			
+			<?php endwhile; ?>
+			</div>
+		<?php
+}

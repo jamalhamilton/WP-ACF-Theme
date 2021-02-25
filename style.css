@@ -346,39 +346,25 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
 
 /*---Author Box in Blog Post (Blog post only)---*/
-h2.author_details {
-  color: #373839;
-  font-size: 30px;
-  font-family: 'Swiss721BT-Bold';
-  padding: 20px 0;
-}
-#authorboxsingle {
-	display: none;
-}
-.single-post #authorboxsingle {
-	display: block;
-}
-.authorboxsingle {
-  padding: 20px 20px 20px 0;
-  width: 100%;
-  float: left;
-  display: block;
-}
-.authorboxsingle.authormulti {
-  padding: 20px 20px 20px 0;
-  width: 100%;
-  border-bottom: 1px solid #000;
-}
-.authorboxsingle.authormulti:last-child{
-  border-bottom: 0px;
-}
-.authorboxsinglename {
-font-size: 1.25rem;
-font-weight: bold;
-line-height: 1.4;
-}
+.author_section { float: left; width: 100%; padding: 20px;}
+h2.author_details { color: #373839; font-size: 30px; font-family: 'Swiss721BT-Bold'; padding: 10px 0;}
+.single-post #authorboxsingle {	display: block;}
+.authorboxsingle { padding: 20px 20px 20px 0; width: 100%; float: left; display: block;}
+.authorboxsingle.authormulti { padding: 20px 20px 20px 0; width: 100%; border-bottom: 1px solid #000;}
+.authorboxsingle.authormulti:last-child{ border-bottom: 0px;}
+.authorboxsinglename {font-size: 1.25rem;font-weight: bold;line-height: 1.4;}
 
-/*----------------------------*/
+/*--------Related Post Section---------*/
+.related_title { float: left; width: 100%; padding: 0 20px;}
+.related_title h1{ font-size: 30px; font-family: 'Swiss721BT-Bold'; text-align: left; margin-bottom: 5px;}
+.related_posts { float: left; width: 100%;}
+.box_container { float: left; padding: 20px; width: 33%;}
+figure.box_featured_img { width: 100%; min-height: 220px; margin: 10px 0;}
+p.reading_time_title { float: left; width:100%; font-size: 20px; font-weight: bold; text-transform: lowercase; font-family: 'Swiss721BT-Bold';
+  margin-bottom: 15px;}
+.related_posts .box_container h2 a{ float: left; width: 100%; font-family: 'RecoletaAlt-Bold'; font-size: 28px; line-height: 32px; color: #000000;
+    text-decoration: none;}
+/*-------------------------------------*/
 
 @media(max-width:1440px) {
   .tabbed_content_section .tabbed_left_side h2{ font-size: 40px; line-height: 55px ;}
@@ -398,6 +384,7 @@ line-height: 1.4;
     .tabbed_box_content a.learn_more {padding-right: 10px;font-size: 15px; line-height: 20px; }
 }
 @media(max-width:767px) {
+  .box_container {width: 100%;}
 .leadership_accordion_section .faq_events_section li{width: 100%; padding: 2% 3%;} 
 .fullbleed_grid_3column .left_block {width: 100%;}
 .conservation_content .left_block {width: 100%;}

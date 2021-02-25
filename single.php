@@ -76,42 +76,47 @@ get_header();
 			
 <?php //echo wpautop( get_the_author_meta( 'description' ) ); ?>
 
+<div class="author_section">
+	<?php if ( function_exists( 'get_coauthors' ) ) { ?>
+		<h2 class="author_details">About the Author…</h2>
+		<?php
+		$coauthors = get_coauthors();
+		//print_r($coauthors);
+		$number= count($coauthors);
+		foreach ( $coauthors as $coauthor ) {
+			$custom_title = get_user_meta( $coauthor->ID, 'wpseo_title', true ); echo $titleeee;
+		?>
+		<div id="authorboxsingle-<?php echo $coauthor->ID; ?>" class="authorboxsingle <?php if($number>1){ echo 'authormulti'; } ?>">
+		<p><span class="authorboxsinglename"><?php echo ( $coauthor->display_name ); ?></span> 
+		<?php if($custom_title){ ?> 
+				<p class="custom_title"><?php echo $custom_title; ?> </p>
+		<?php } ?>
+		<!--<span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( '$coauthor->ID' ), get_the_author_meta( '$coauthor->user_login' ) ); ?><?php echo ( $coauthor->user_login ); ?>">See all</a>)</span></p>-->
+		<p class="authorboxsinglebio"><?php echo ( $coauthor->user_description ); ?></p>
+		</div>
+		<?php
+		}
+		// treat author output normally
+		} else {
 
-<?php if ( function_exists( 'get_coauthors' ) ) { ?>
-	<h2 class="author_details">About the Author…</h2>
-
-<?php
-$coauthors = get_coauthors();
-//print_r($coauthors);
-$number= count($coauthors);
-foreach ( $coauthors as $coauthor ) {
-	$custom_title = get_user_meta( $coauthor->ID, 'wpseo_title', true ); echo $titleeee;
-  ?>
-  <div id="authorboxsingle-<?php echo $coauthor->ID; ?>" class="authorboxsingle <?php if($number>1){ echo 'authormulti'; } ?>">
-  <p><span class="authorboxsinglename"><?php echo ( $coauthor->display_name ); ?></span> 
-  <?php if($custom_title){ ?> 
-  		<p class="custom_title"><?php echo $custom_title; ?> </p>
-  <?php } ?>
-  <!--<span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( '$coauthor->ID' ), get_the_author_meta( '$coauthor->user_login' ) ); ?><?php echo ( $coauthor->user_login ); ?>">See all</a>)</span></p>-->
-  <p class="authorboxsinglebio"><?php echo ( $coauthor->user_description ); ?></p>
-  </div>
-  <?php
-}
-// treat author output normally
-} else {
-
-?>
-  <div class="authorboxsingle">
-	  <p><span class="authorboxsinglename"><?php esc_html(the_author_meta('display_name')); ?></span> <span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>">See all</a>)</span></p>
-	  <p class="authorboxsinglebio"><?php esc_textarea(the_author_meta('description')); ?></p>
-  </div>
-
-<?php } ?>
+		?>
+		<div class="authorboxsingle">
+			<p><span class="authorboxsinglename"><?php esc_html(the_author_meta('display_name')); ?></span> <span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>">See all</a>)</span></p>
+			<p class="authorboxsinglebio"><?php esc_textarea(the_author_meta('description')); ?></p>
+		</div>
+		<?php } ?>
+</div>
 
 </article>
-		<?php endwhile; // End of the loop.
-		?>
+		<?php endwhile; // End of the loop.	?>
+
+		<?php example_cats_related_post() ?>
 </div>
+
+
+
+
+
 	</main><!-- #main -->
 
 <?php
