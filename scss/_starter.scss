@@ -878,3 +878,21 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+
+
+// Site div max-width
+.contained-width {
+	width:100%;
+	max-width: 1380px;
+	padding:0 20px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+@media (min-width: 1420px) {
+	.contained-width .full-width {
+		margin: 0 calc(-50vw + 710px);
+	}
+}

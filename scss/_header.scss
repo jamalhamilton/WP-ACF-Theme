@@ -48,11 +48,13 @@
 
 
 .site-header {
+	width:100%;
+	position: absolute;
+
+	.contained-width {
   display: flex;
   margin:auto;
   width:100%;
-  position: absolute;
-
 
 
   .site-branding {
@@ -63,8 +65,6 @@
     }
     .site-title {
       display: none;
-
-
     }
   }
 
@@ -148,7 +148,7 @@
     }
 
 
-  }
+  }}
 }
 
 
