@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+	<div class="contained-width">	
        <div class="content-flexible"> 
 		<?php
 		while ( have_posts() ) :
@@ -84,6 +85,7 @@ get_header();
 		//print_r($coauthors);
 		$number= count($coauthors);
 		foreach ( $coauthors as $coauthor ) {
+			//print_r($coauthor);
 			$custom_title = get_user_meta( $coauthor->ID, 'wpseo_title', true ); echo $titleeee;
 		?>
 		<div id="authorboxsingle-<?php echo $coauthor->ID; ?>" class="authorboxsingle <?php if($number>1){ echo 'authormulti'; } ?>">
@@ -92,7 +94,7 @@ get_header();
 				<p class="custom_title"><?php echo $custom_title; ?> </p>
 		<?php } ?>
 		<!--<span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( '$coauthor->ID' ), get_the_author_meta( '$coauthor->user_login' ) ); ?><?php echo ( $coauthor->user_login ); ?>">See all</a>)</span></p>-->
-		<p class="authorboxsinglebio"><?php echo ( $coauthor->user_description ); ?></p>
+		<p class="authorboxsinglebio"><?php echo ( $coauthor->description ); ?></p>
 		</div>
 		<?php
 		}
@@ -115,7 +117,7 @@ get_header();
 
 
 
-
+	</div>
 
 	</main><!-- #main -->
 

@@ -18,7 +18,7 @@
 
 	<div class="entry-content">
 		<?php if ( have_rows( 'content' ) ): ?>
-		  <div id="main-body" class="container">
+		  <div id="main-body" class="">
 		    <?php get_template_part("template-parts/content", "flexible"); ?>
 		  </div>
 		<?php endif;

@@ -8,24 +8,23 @@ $body_copy = get_sub_field('body_copy');
 $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 
 <div class="content-flexible">
-<?php
-if(! empty($hero_image ['url'])):
-?>
+<?php if(! empty($hero_image ['url'])): ?>
 <div class="hero_image" style="background-image: url(<?php echo  $hero_image ['url'] ; ?>);"></div>
 <?php endif; ?>
-
-<div class="hero_image_with_text">
-	<?php if(! empty($vertical_title)):?>
-	 <div class="vertcial_text">
-	 	<span><?php echo $vertical_title; ?></span>
-	 </div>
-	<?php endif; ?>
-	  <div class="intro_text">
-	  	<h2><?php echo $headline_copy; ?></h2>
-      <p><?php echo $body_copy; ?></p>
-      <?php if(empty($hero_image ['url'])): ?>
-      <p><?php echo $body_copy_2nd_column; ?></p>
-      <?php endif; ?>
-	  </div>
-</div>
+	<div class="contained-width" style="background-color:<?php echo $color;?>">
+			<div class="hero_image_with_text">
+				<?php if(! empty($vertical_title)):?>
+				<div class="vertcial_text">
+					<span><?php echo $vertical_title; ?></span>
+				</div>
+				<?php endif; ?>
+				<div class="intro_text">
+					<h1><?php echo $headline_copy; ?></h1>
+					<?php if(empty($hero_image ['url'])): ?>  
+					<p><?php echo $body_copy; ?></p>      
+					<p><?php echo $body_copy_2nd_column; ?></p>
+					<?php endif; ?>
+				</div>
+			</div>
+	</div>		
 	  </div>

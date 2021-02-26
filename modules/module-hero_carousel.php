@@ -4,6 +4,10 @@
 .flex-control-nav li {    margin: 6px 6px; display: inline-block; zoom: 1;}
 .flex-control-paging li a { width: 14px; height: 14px; border: 3px solid #fff; background: rgb(0 0 0 / 0%);}
 .flex-control-paging li a.flex-active { background: rgb(255 255 255); }
+
+.flexslider .slides img {
+    height: 655px;
+}
 </style>
 <?php 
 $color = get_sub_field('color');
@@ -23,3 +27,11 @@ if( $images ): ?>
         </ul>
     </div>   
 <?php endif; ?>
+
+
+<script type="text/javascript">
+	$('.flexslider').flexslider({
+		animation: "slide",
+		directionNav: false
+	});
+</script>

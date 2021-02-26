@@ -1,38 +1,41 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script>
     jQuery(document).ready(function() {
-    jQuery(".leadership_tab .leadership_set:first-child").addClass("active");
-    jQuery(".leadership_tab .leadership_set:first-child a").addClass("active");  
-    jQuery(".leadership_set > a").on("click", function() {
-    if (jQuery(this).hasClass("active")) {
-		jQuery(this).removeClass("active");
-		jQuery(this).siblings(".faq_contenta").slideUp(200);
-		jQuery(".leadership_set > a i").removeClass("minus-icon").addClass("plus-icon");
-    } else {
-		jQuery(".leadership_set > a i").removeClass("minus-icon").addClass("plus-icon");
-		jQuery(this).find("i").removeClass("plus-icon").addClass("minus-icon");
-		jQuery(".leadership_set > a").removeClass("active");
-		jQuery(this).addClass("active");
-		jQuery(".faq_contenta").slideUp(200);
-		jQuery(this).siblings(".faq_contenta").slideDown(200);
-    }
-	return false;
-  });
-});
+      jQuery(".leadership_tab .leadership_set:first-child").addClass("active");
+      jQuery(".leadership_tab .leadership_set:first-child a").addClass("active");  
+      jQuery(".leadership_set > a").on("click", function() {
+          if (jQuery(this).hasClass("active")) {
+        		jQuery(this).removeClass("active");
+        		jQuery(this).siblings(".faq_contenta").slideUp(200);
+        		jQuery(".leadership_set > a i").removeClass("minus-icon").addClass("plus-icon");
+          } else {
+        		jQuery(".leadership_set > a i").removeClass("minus-icon").addClass("plus-icon");
+        		jQuery(this).find("i").removeClass("plus-icon").addClass("minus-icon");
+        		jQuery(".leadership_set > a").removeClass("active");
+        		jQuery(this).addClass("active");
+        		jQuery(".faq_contenta").slideUp(200);
+        		jQuery(this).siblings(".faq_contenta").slideDown(200);
+          }
+      	return false;
+      });
+    });
 </script>
 <style>
   .close { float: right; font-size: 60px; font-weight: 100; line-height: 1; color: #fff; opacity: 1; margin: -45px -30px;}
   .modal-dialog { margin: 6% auto; }
   .modal-body { padding: 0px;}
 .container-fluid { padding-right: 0px; padding-left: 0px;}
-.col-md-7.ml-auto { padding: 0 50px;}
-h1.popupname { font-size: 55px; font-weight: 600;color: #000;}
-h3.popup-title { font-size: 35px;color: #000;}
-p.popupbio { font-size: 22px!important; margin: 0!important;color: #000;}
+.col-md-7.ml-auto { padding: 25px 50px;}
+h1.popupname { font-size: 55px; color: #000;font-family: "Swis721BT-Bold";line-height: 66px;letter-spacing: 1.1px;}
+h3.popup-title { font-size: 35px;color: #000;line-height: 42px;letter-spacing: 0.88px;font-family: "Swis721BT-Roman";}
+p.popupbio { font-size: 22px!important; margin: 0!important;color: #000;line-height: 45px;letter-spacing: 0.55px;font-family: "Swis721BT-Roman";}
 span.popupsocial { float: left; margin: 20px 7px;}
 span.popupsocial img{height: 22px; width: 22px;}
 a.btn.btn-primary.active {background-color: #fff; border: 0; box-shadow: none;padding: 0px 0px;
     margin: 0px 0px;}
+    .popupimage img {
+      height: 455px;
+    }
 </style>
 <?php
 $settings = get_sub_field('settings');

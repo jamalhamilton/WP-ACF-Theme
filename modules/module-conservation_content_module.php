@@ -25,13 +25,14 @@ $body = get_sub_field('body');
                 $body = get_sub_field('body');
                 $link = get_sub_field('link');
         ?>  
-        <div class="left_block <?php if($i%3==0){echo "last"; $i=0;} ?>">
+        <div class="left_block <?php if($i%3==0){echo "last"; $i=0;} ?> <?php if($i==1){echo "first"; } ?>">
+        <h2 style="color:<?php echo $text_color;?>"><?php echo $title; ?></h2>
         <?php if(empty($bannerimage)): ?>
               <?php if(!empty($image)): ?>
               <div class="card_image" style="background-image: url(<?php echo  $image ['url'] ; ?>);"></div>
               <?php endif; ?>
           <?php endif; ?>
-          <h2 style="color:<?php echo $text_color;?>"><?php echo $title; ?></h2>
+          
           <?php if(!empty($bannerimage)): ?>
               <p style="color:<?php echo $text_color;?>"><?php echo $body; ?></p>
             <?php endif; ?>
