@@ -1,6 +1,13 @@
 <?php if ( have_rows( 'content' ) ): $i = 1 ?>
-	<?php while ( have_rows( 'content' ) ) : the_row(); ?>
-	<section id="content-<?php echo $i++ ?>-<?php echo get_the_ID(); ?>" class="contained-width content-flexible-<?php echo get_row_layout(); ?>">
+	<?php while ( have_rows( 'content' ) ) : the_row(); 
+		if(get_row_layout() == 'featured_image_&_timely_content_3-column') {
+			$cls = 'fitc3c';
+		}else{
+			$cls = '';
+		}
+		?>
+
+	<section id="content-<?php echo $i++ ?>-<?php echo get_the_ID(); ?>" class="contained-width content-flexible-<?php echo get_row_layout(); ?> <?php echo $cls; ?>">
 	<?php //get_template_part( '/modules/module', get_row_layout() ); ?>
 
 	<?php if( get_row_layout() == 'contained_cta' ):

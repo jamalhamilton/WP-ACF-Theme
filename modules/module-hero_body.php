@@ -11,7 +11,7 @@ $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 <?php if(! empty($hero_image ['url'])): ?>
 <div class="hero_image" style="background-image: url(<?php echo  $hero_image ['url'] ; ?>);"></div>
 <?php endif; ?>
-	<div class="contained-width" style="background-color:<?php echo $color;?>">
+	<div class="" style="background-color:<?php echo $color;?>">
 			<div class="hero_image_with_text">
 				<?php if(! empty($vertical_title)):?>
 				<div class="vertcial_text">

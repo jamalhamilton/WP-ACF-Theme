@@ -14,7 +14,11 @@ $num = 0;
             $num = 0;
           echo '<li class="f-logo">';
          } else {
-            echo '<li>';
+            if($num ==4) {
+                echo '<li class="l-logo">';
+            } else {
+                echo '<li>';
+            }
          }
         ?>
 

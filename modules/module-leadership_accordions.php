@@ -82,10 +82,10 @@ if( have_rows('accordions') ): ?>
       <div class="modal-body">
       <div class="container-fluid">
         <div class="row">
-        <div class="col-md-5 ml-auto">
+        <div class="col-md-5 ml-auto col-xs-12">
            <div class="popupimage"><img src="<?php echo  $image ['url'] ; ?>"></div>           
         </div>
-        <div class="col-md-7 ml-auto">
+        <div class="col-md-7 ml-auto col-xs-12">
         <h1 class="popupname"><?php echo $name; ?></h1>
       <h3 class="popup-title"><?php echo $title2; ?></h3>
       <p class="popupbio"><?php echo $bio; ?></p>

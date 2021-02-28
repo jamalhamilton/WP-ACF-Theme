@@ -9,8 +9,10 @@ $body = get_sub_field('body');
 
 
 <div class="content-flexible">
-    <div class="conservation_banner_image ">
-      <img src="<?php echo  $bannerimage ['url'] ; ?>">
+  <?php if($bannerimage ['url']): ?>
+    <div class="conservation_banner_image" style="background-image: url('<?php echo  $bannerimage ['url'] ; ?>');height: 655px;">
+      <!-- <img src="<?php echo  $bannerimage ['url'] ; ?>"> -->
+      <?php endif; ?>
 </div>
     <div class="conservation_content" style="background-color:<?php echo $color;?>">
     <div class="main_title"><h2 style="color:<?php echo $text_color;?>"><?php echo $title; ?></h2>

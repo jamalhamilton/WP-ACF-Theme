@@ -16,19 +16,20 @@ if( have_rows('columns') ):
 		</figure>
 		<?php endif; ?>
 		<div class="timely_content_row">
-			<?php while( have_rows('columns') ): the_row();
+			<?php $i=0;
+			while( have_rows('columns') ): the_row();
 			$title = get_sub_field('title');
 			$copy = get_sub_field('copy');
 			$cta = get_sub_field('cta');
 			?>
-			<div class="timely_content_3_column">
+			<div class="timely_content_3_column <?php if($i==0){echo 'first';} ?>">
 				<h3><?php echo $title; ?></h3>
 				<p><?php echo  $copy; ?></p>
 				<?php if($cta['url']!=''):?>
 				<span><a href="<?php echo $cta['url'];?>">Learn More </a><img src="<?php bloginfo('template_directory');?>/assets/images/noun_Long Arrow_2596838.svg" alt=""></span>
 				<?php endif; ?>
 			</div>
-			<?php endwhile; ?>
+			<?php $i++; endwhile; ?>
 		</div>
 	</div>
 </div>

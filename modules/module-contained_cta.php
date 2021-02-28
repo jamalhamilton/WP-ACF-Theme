@@ -26,8 +26,8 @@ if(empty($vertical_title)) {
           <?php } ?>
         </div>
         </div>       
-        <div class="contained_cta right_block" style="background-image: url(<?php //echo  $image ['url'] ; ?>);">
-      <img src="<?php echo  $image ['url'] ; ?>">
+        <div class="contained_cta right_block" style="background-image: url(<?php echo  $image ['url'] ; ?>);background-size: cover;">
+        <!-- <img src="<?php echo  $image ['url'] ; ?>"> -->
 
 
     </div>
