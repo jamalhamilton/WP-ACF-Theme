@@ -16,7 +16,7 @@ $image = get_sub_field('image');
             <a class="contained_cta_link" style="color:<?php echo $text_color; ?>" href="<?php print_r($cta['url']); ?>"><?php print_r($cta['title']); ?> <i class="fas fa-long-arrow-alt-right"></i></a>
           <?php } ?>          
         </div>       
-        <div class="contained_cta right_block" style="background-image: url(<?php //echo  $image ['url'] ; ?>);">
-          <img src="<?php echo  $image ['url'] ; ?>">
+        <div class="contained_cta right_block" style="background-image: url(<?php echo  $image ['url'] ; ?>);">
+          <!-- <img src="<?php echo  $image ['url'] ; ?>"> -->
         </div>
       </div>  

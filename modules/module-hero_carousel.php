@@ -20,7 +20,7 @@ if( $images ): ?>
     <div id="slider" class="flexslider">
         <ul class="slides">
             <?php foreach( $images as $image ): ?>
-                <li style="background: url('<?php echo esc_url($image['url']); ?>');height: 655px;background-size: cover;background-repeat: no-repeat;">
+                <li style="background: url('<?php echo esc_url($image['url']); ?>');height: 655px;background-size: cover;background-repeat: no-repeat;background-position: center;">
                     <!-- <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /> -->
                 </li>
             <?php endforeach; ?>
