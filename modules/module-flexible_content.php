@@ -15,13 +15,26 @@ $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 
 <div class="flexible_content_with_text" style="background-color:<?php echo $color;?>">
 	  <div class="intro_text">
-	  	<h2 style="color:<?php echo $text_color; ?>"><?php echo $headline_copy; ?></h2>
-        <?php if(empty($body_copy_2nd_column)): ?>
+        <?php/* if(!empty($body_copy_2nd_column)): ?>
           <div class="half_width"><?php echo $body_copy; ?></div>
-        <?php elseif(!empty($body_copy_2nd_column)): ?>
+        <?php elseif(empty($body_copy_2nd_column)): ?>
             <?php echo $body_copy; ?>
         <?php endif; ?>
-          <?php echo $body_copy_2nd_column; ?>
+          <?php echo $body_copy_2nd_column; */?>
+          <?php 
+          if(!empty($body_copy_2nd_column)) { ?>
+            <div class="half_width" style="float: left;padding-right: 15px;">
+              <h2 style="color:<?php echo $text_color; ?>"><?php echo $headline_copy; ?></h2>
+              <?php echo $body_copy; ?></div>  
+            <div class="half_width" style="float: left;padding-left: 15px;"><?php echo $body_copy_2nd_column; ?></div>  
+          <?php 
+            } else { 
+            ?>
+              <h2 style="color:<?php echo $text_color; ?>"><?php echo $headline_copy; ?></h2>
+            <?php
+              echo $body_copy; 
+            }
+          ?>
 	  </div>
 </div>
 	  </div>

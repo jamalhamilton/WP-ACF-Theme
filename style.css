@@ -74,6 +74,13 @@ html, body, section {
 
 * { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-text-size-adjust: none; }
 html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; background: #fff; }
+body p, body h2, h1  {
+  color: #000;
+}
+.contained-width {
+  padding: 0;
+  max-width: 1337px; 
+}
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
 /*.content-flexible { float: left; max-width: 1422px; margin-left: auto; margin-right: auto; padding: 20px}*/
 .content-flexible{
@@ -83,6 +90,7 @@ html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; backg
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero_image_with_text .intro_text h1 {
   letter-spacing: 1.25px;
   font-family: "RecoletaAlt-Bold";
@@ -115,8 +123,11 @@ html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; backg
 .fullbleed_with_text.image{background: #d9d8d6;}
 .fullbleed_with_text.image .intro_text h2{color:#000;margin-bottom: 15px;}
 .fullbleed_with_text.image .intro_text a{color:#000;font-size: 25px;font-family: "Swiss721BT-Bold";}
-.fullbleed_with_text .intro_text p{color:#fff; padding-top: 20px;font-size: 18px;font-family: "Swiss721BT-Roman";letter-spacing: 0.45px;line-height: 35px;}
+.fullbleed_with_text .intro_text p{color:#fff; margin: 30px 0 40px 0;font-size: 18px;font-family: "Swiss721BT-Roman";letter-spacing: 0.45px;line-height: 35px;}
   a.fullbleed_cta_link {color: #000000; text-decoration: none; font-size: 25px; font-family: 'Swiss721BT-Bold';line-height: 30px;} 
+  .content-flexible-full_bleed_cta a.fullbleed_cta_link {
+    color: #fff;
+  }
   a.fullbleed_cta_link:visited { text-decoration: none; }
   a.fullbleed_cta_link img{vertical-align: middle;}
   .fullbleed_with_text .intro_text.left_block { width: 50%;  padding-left:20px;  padding-top: 12%;  padding-bottom: 5%;}
@@ -125,7 +136,7 @@ html, body { width: 100%; font-size: 18px; line-height: 21px; color: #000; backg
 /*--Contained CTA------*/
 .contained_cta {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;}
 .contained_cta .vertcial_text { position: absolute;
-  top: 67%;
+  top: 66.5%;
   width: 280px;
   left: -10%;}
   .contained_cta .content_block {
@@ -193,7 +204,7 @@ a.contained_cta_link:visited { text-decoration: none;}
 .module_left_content_right_image_cta {padding: 78px 110px; width:100%;}
 .left_content_right_image_cta_section .right_area img {
   width: 100%;
-  min-height: 250px;
+  min-height: 300px;
 }
 .left_content_right_image_cta_section{
 display: flex;
@@ -201,17 +212,18 @@ flex-wrap: wrap;
 }
 
 .left_content_right_image_cta_section .left_area{
-width: 65%
+  width: 65%;
+  padding-right: 65px;
 }
 .left_content_right_image_cta_section .left_area h2{
 font-size: 50px; line-height: 65px; letter-spacing: 1.25px;font-family: 'RecoletaAlt-Bold';
 }
-.left_content_right_image_cta_section .left_area p{ color:#373839;font-size: 18px; line-height: 35px; letter-spacing: 0.45px;font-family: "Swis721 BT-Roman";}
+.left_content_right_image_cta_section .left_area p{ color:#373839;font-size: 18px; line-height: 35px; letter-spacing: 0.45px;font-family: "Swis721 BT-Roman";margin: 40px 0px 50px 0; }
 .left_content_right_image_cta_section .left_area ul { padding: 0; margin: 0; list-style: none; }
 .left_content_right_image_cta_section .left_area ul li a{font-size: 25px; line-height: 30px; margin-bottom: 20px; letter-spacing: 1px; color: #000; font-family: "Swiss721BT-Bold"; text-decoration: none; }
 .left_content_right_image_cta_section .left_area ul li a:hover{border-bottom: 2px solid#000;}
 .left_content_right_image_cta_section .right_area{
-width: 32%; padding-left: 2%;
+width: 35%; padding-left: 5%;
 }
 /* farm logos module*/
 .farm_logos { display: flex; flex-wrap: wrap; width: 100%; align-items: center; margin: 0; }
@@ -255,7 +267,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
 .featured_image_timely_content_3_column_section figure{ background-repeat: no-repeat; background-position:center center; background-size: cover; min-height: 655px;}
 /*----------Contact Us Module----------*/
 .contact_us_module_content{width:100%; padding-right: 275px;}
-.contact_us_module_content p{font-size: 35px; line-height: 65px; letter-spacing: 1px;font-family: 'RecoletaAlt-Bold';}
+.contact_us_module_content p{font-size: 35px; line-height: 65px; letter-spacing: 1px;font-family: 'RecoletaAlt-Bold';color: #000;}
 }
 .contact_us_module_content p a{color: #3d7cc9; text-decoration: none;}
 /*767*/

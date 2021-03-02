@@ -16,8 +16,15 @@ $cta = get_sub_field('cta');
       <p style="color:<?php echo $text_color;?>"><?php echo $copy; ?></p>
       <?php if(!empty($cta)){ ?>          
         <a class="fullbleed_cta_link" href="<?php print_r($cta['url']); ?>" style="color:<?php echo $text_color;?>"><?php print_r($cta['title']); ?> 
+        <?php 
+        if($text_color == '#000000') {
+          ?>
         <img src="<?php bloginfo('template_directory');?>/assets/images/noun_Long Arrow_2596838.png" alt=""></a>
-    <?php } ?>
+        <?php  
+        } else {
+        ?>
+        <img src="<?php bloginfo('template_directory');?>/assets/images/LongArrow.png" alt=""></a>
+    <?php }} ?>
      </div>
 	  </div>
    <?php elseif(!empty($image)):?>
