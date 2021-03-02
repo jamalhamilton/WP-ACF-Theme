@@ -36,7 +36,7 @@ $title = get_sub_field('title');
 					$result = preg_replace("/[^a-zA-Z]+/", "", $title);
 					$string = strtolower( str_replace(' ', '', $result));
 					?>
-					<div class="tab-pane <?php if($k == 1) {?> show active<?php }?>" id="<?php echo $string; ?>" role="tabpanel" aria-labelledby="<?php echo $string; ?>-tab"> 
+					<div class="tab-pane <?php if($k == 1) {?>  active<?php }?>" id="<?php echo $string; ?>" role="tabpanel" aria-labelledby="<?php echo $string; ?>-tab"> 
 						
 					<?php
 					if(! empty( $image['url'])):
