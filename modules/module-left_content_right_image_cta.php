@@ -6,6 +6,9 @@ $copy = get_sub_field('copy');
 $cta = get_sub_field('cta');
 $cta_2 = get_sub_field('cta_2'); 
 $image = get_sub_field('image');
+if(empty($text_color)) {
+    $text_color = '#000';  
+}
 ?>
 <?php if(! empty($title)):?>
 <div class="module_left_content_right_image_cta" style="background-color:<?php echo $color;?>">

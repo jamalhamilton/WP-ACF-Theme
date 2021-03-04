@@ -2,6 +2,9 @@
 $color = get_sub_field('color');
 $text_color=get_sub_field('text_color');
 $title = get_sub_field('title');
+if(empty($text_color)) {
+    $text_color = '#000';  
+}
 ?>
 <?php if(have_rows('tabs')):?>
 <div class="tabbed_content" style="background-color:<?php echo $color; ?>">

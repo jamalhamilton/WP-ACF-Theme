@@ -8,6 +8,11 @@ $left_cta = get_sub_field('left_cta');
 $right_title = get_sub_field('right_title');
 $right_copy = get_sub_field('right_copy');
 $right_cta = get_sub_field('right_cta');
+
+if(empty($text_color)) {
+  $text_color = '#fff';  
+}
+
 ?>
 
 

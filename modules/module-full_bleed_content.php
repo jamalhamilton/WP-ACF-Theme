@@ -7,6 +7,9 @@ $title = get_sub_field('title');
 $image = get_sub_field('image');
 $body = get_sub_field('body');
 $cta = get_sub_field('cta');
+if(empty($text_color)) {
+    $text_color = '#fff';  
+}
 ?>
 
 

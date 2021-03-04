@@ -26,6 +26,12 @@
         $subtitle = get_sub_field('subtitle');
         $cta = get_sub_field('cta');
         $image = get_sub_field('image');
+        $color = get_sub_field('color');
+        $text_color=get_sub_field('text_color');
+        
+        if(empty($text_color)) {
+            $text_color = '#000';  
+        }
         ?>
         <div class="column">
         <?php if( !empty( $image ) ): ?>

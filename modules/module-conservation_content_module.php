@@ -5,6 +5,11 @@ $text_color=get_sub_field('text_color');
 $title = get_sub_field('title');
 $bannerimage = get_sub_field('image');
 $body = get_sub_field('body');
+
+if(empty($text_color)) {
+  $text_color = '#000';  
+}
+
 ?>
 
 

@@ -4,7 +4,12 @@ $text_color=get_sub_field('text_color');
 $image = get_sub_field('image');
 $title = get_sub_field('title');
 $copy = get_sub_field('copy');
-$cta = get_sub_field('cta'); ?>
+$cta = get_sub_field('cta'); 
+
+if(empty($text_color)) {
+    $text_color = '#000';  
+}
+?>
 
 <div class="content-flexible">
 <?php if(! empty($image ['url'])): ?>

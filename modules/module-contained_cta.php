@@ -5,9 +5,15 @@ $vertical_title = get_sub_field('vertical_title');
 $copy = get_sub_field('copy');
 $cta = get_sub_field('cta');
 $image = get_sub_field('image');
+$color = get_sub_field('color');
+$text_color=get_sub_field('text_color');
 $cls = '';
 if(empty($vertical_title)) {
   $cls = 'without-v-txt';
+}
+
+if(empty($text_color)) {
+  $text_color = '#000';  
 }
 
 ?>

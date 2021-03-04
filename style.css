@@ -124,8 +124,8 @@ body p, body h2, h1  {
 .hero_image_with_text .intro_text p{padding-top: 20px; font-family: 'Swiss721BT-Regular'; font-size: 18px;line-height: 35px;letter-spacing: 0.45px;}
 
 /*Fullbleed CTA*/
-.content-flexible-full_bleed_cta{margin: 20px 0; padding-right: 0;padding-left: 0;}
-.fullbleed_with_text {display: flex; flex-wrap: wrap; position: relative; width: 100vw; background: #3d7cc9;}
+.content-flexible-full_bleed_cta{ padding-right: 0;padding-left: 0;}
+.fullbleed_with_text {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9;}
 .fullbleed_with_text .intro_text { width: 1420px;margin: 0 auto;  padding-top: 8.5%; padding-bottom: 10%;}
 .fullbleed_with_text .intro_text h2{color:#fff; font-size: 50px; line-height: 65px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold'; 
 }
@@ -248,13 +248,14 @@ width: 35%; padding-left: 5%;
   padding-right: 0;
 }
 /*-----------Fullbleed Content Module---*/
-.fullbleed_content {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9; height: 583px;}
-.fullbleed_content .intro_text.right_block {width: 50%; padding-left: 8%; padding-top: 7%; padding-bottom: 10%; padding-right: 20px;}
-.fullbleed_content .intro_text.left_block { width: 50%; padding-left: 20px; padding-top: 7%; padding-bottom: 10%; padding-right: 8%;}
+.fullbleed_content {display: table; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9;height: 583px;}
+.fullbleed_content .intro_text.right_block {width: 50%; padding-left: 8%;  padding-right: 20px; display: table-cell;vertical-align: middle; height: 100%; }
+.fullbleed_content .intro_text.left_block { width: 50%; padding-left: 20px; padding-right: 8%; display: table-cell;vertical-align: middle;height: 100%;}
 .content-flexible-full_bleed_content {
   padding-left: 0;
   padding-right: 0;
-  height: 583px;
+  min-height: 583px;
+  height: auto;
 }
 .fullbleed_content .intro_text h2{color:#fff; font-size: 50px; line-height: 65px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold';}
 .fullbleed_content .intro_text p{color:#fff;margin-bottom: 40px; padding-top: 10px;font-family: "Swiss721BT-Regular";font-size: 18px;letter-spacing: 0.45px;line-height: 35px;}
@@ -263,9 +264,9 @@ a.fullbleed_content_link:hover {
 
 }
 a.fullbleed_content_link:visited { text-decoration: none; }
-.fullbleed_content_image.left_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:50%; min-height: 400px;
+.fullbleed_content_image.left_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%;height: 100%; min-height: 400px;
 }
-.fullbleed_content_image.right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:50%; min-height: 400px;
+.fullbleed_content_image.right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%;height: 100%; min-height: 400px;
 }
   /*---------Timely content 3 column----------*/
   .timely_content_row{ display: flex; flex-wrap: wrap; margin: 0 -20px; }

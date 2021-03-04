@@ -6,7 +6,9 @@ $body = get_sub_field('body');
 $cta = get_sub_field('cta');
 $image = get_sub_field('image');
 
-
+if(empty($text_color)) {
+    $text_color = '#000';  
+}
 ?>
     <div class="left_content_right_image_cta_2">
         <div class="intro_text left_block" style="background-color:<?php echo $color; ?>">

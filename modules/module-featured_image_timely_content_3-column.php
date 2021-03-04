@@ -2,6 +2,13 @@
 $settings = get_sub_field('settings');
 $headline = get_sub_field('headline');
 $image = get_sub_field('image');
+$color = get_sub_field('color');
+$text_color=get_sub_field('text_color');
+
+if(empty($text_color)) {
+    $text_color = '#000';  
+}
+
 if( have_rows('columns') ):
 ?>
 <div class="featured_image_timely_content_3_column_section">
