@@ -15,6 +15,7 @@ $text_color=get_sub_field('text_color');
                 $link = get_sub_field('link');               
         ?>  
         <div class="left_block <?php if($i%3==0){echo "last"; $i=0;} ?>">
+          <div class="overlay"></div>
           <div class="card_image" style="background-image: url(<?php echo  $image ['url'] ; ?>);">
                 <h2><a style="color:<?php echo $text_color;?>" class="fullbleed_grid_3columnlink" href="<?php print_r($cta['url']); ?>">
                   <?php echo $title; ?></a>

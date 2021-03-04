@@ -49,8 +49,9 @@ $title = get_sub_field('title');
 						 <div class="tabbed_location"><strong>Location:</strong> <?php echo $location; ?></div>
 						<p> <?php echo $body; ?></p>
 						 
-<span> <a href="<?php echo $cta['url'];?>" class="learn_more">Learn More </a>
-	<img src="<?php bloginfo('template_url')?>/assets/images/arrow_white.svg" alt=""></span>						 
+						<span> <a href="<?php echo $cta['url'];?>" class="learn_more">Learn More
+							<svg xmlns="http://www.w3.org/2000/svg" width="59.382" height="22.001" viewBox="0 0 59.382 22.001"><defs><style>.k{fill:<?php echo $text_color;?>;stroke-width: 2px;stroke: <?php echo $text_color;?>;}</style></defs><path class="k" d="M64.359,40.636h-53.8l7.646-7.646a1.033,1.033,0,1,0-1.461-1.461l-9.3,9.3a1.03,1.03,0,0,0-.439.843c0,.005,0,.01,0,.016s0,.022,0,.033a1.025,1.025,0,0,0,.056.289,1,1,0,0,0,.075.165,1.037,1.037,0,0,0,.088.132.97.97,0,0,0,.079.119l9.5,9.5a1.033,1.033,0,1,0,1.461-1.461L10.515,42.7H64.359a1.033,1.033,0,0,0,0-2.067Z" transform="translate(65.892 52.727) rotate(180)"/></svg>
+ 						</a></span>						 
 					</div>
 					<?php endif; ?>
 					</div>

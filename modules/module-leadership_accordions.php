@@ -21,21 +21,31 @@
     });
 </script>
 <style>
-  .close { float: right; font-size: 60px; font-weight: 100; line-height: 1; color: #fff; opacity: 1; margin: -45px -30px;}
-  .modal-dialog { margin: 6% auto; }
+  .close { float: right; font-size: 60px; font-weight: 100; line-height: 1; color: #fff; opacity: 1; margin: -53px -47px;}
+  .modal-dialog { margin: 5% auto; }
   .modal-body { padding: 0px;}
 .container-fluid { padding-right: 0px; padding-left: 0px;}
-.col-md-7.ml-auto { padding: 25px 50px;}
-h1.popupname { font-size: 55px; color: #000;font-family: "Swis721BT-Bold";line-height: 66px;letter-spacing: 1.1px;}
-h3.popup-title { font-size: 35px;color: #000;line-height: 42px;letter-spacing: 0.88px;font-family: "Swis721BT-Roman";}
-p.popupbio { font-size: 22px!important; margin: 0!important;color: #000;line-height: 45px;letter-spacing: 0.55px;font-family: "Swis721BT-Roman";}
+.col-md-7.ml-auto { padding: 25px 102px;}
+h1.popupname { font-size: 55px; color: #000;font-family: "Swiss721BT-Bold";line-height: 66px;letter-spacing: 1.1px;}
+h3.popup-title {margin-top: 0;margin-bottom: 30px; font-size: 35px;color: #000;line-height: 42px;letter-spacing: 0.88px;font-family: "Swiss721BT-Regular";}
+p.popupbio { font-size: 22px!important; margin: 0 0 45px 0!important;marcolor: #000;line-height: 45px;letter-spacing: 0.55px;font-family: "Swiss721BT-Regular";}
 span.popupsocial { float: left; margin: 20px 7px;}
-span.popupsocial img{height: 22px; width: 22px;}
+span.popupsocial img{width: 30px;height: 24px; }
 a.btn.btn-primary.active {background-color: #fff; border: 0; box-shadow: none;padding: 0px 0px;
     margin: 0px 0px;}
-    .popupimage img {
-      height: 455px;
+    .modal-dialog.modal-lg {
+      width:1288px !important;
     }
+    .modal-dialog.modal-lg .modal-body {
+      height: 803px;
+    }
+    .popupimage, .popupimage {
+      height: 803px;
+      width: 536px;
+      background-size: cover;
+      background-position: center;
+    }
+
 </style>
 <?php
 $settings = get_sub_field('settings');
@@ -83,7 +93,9 @@ if( have_rows('accordions') ): ?>
       <div class="container-fluid">
         <div class="row">
         <div class="col-md-5 ml-auto col-xs-12">
-           <div class="popupimage"><img src="<?php echo  $image ['url'] ; ?>"></div>           
+           <div class="popupimage" style="background-image: url('<?php echo  $image ['url'] ; ?>');">
+            <!-- <img src="<?php echo  $image ['url'] ; ?>"> -->
+          </div>           
         </div>
         <div class="col-md-7 ml-auto col-xs-12">
         <h1 class="popupname"><?php echo $name; ?></h1>

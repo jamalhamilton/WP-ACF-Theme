@@ -30,12 +30,12 @@ if( have_rows('accordians') ): ?>
                     
                       <figure>
                         <?php if($virtual_event == 1) :?>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/images/virtual_event.png" alt="virtual_event">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/images/virtual-events-icon.svg" alt="virtual_event">
                         <?php endif; ?>
                       </figure>
 
                       <div class="event_detail">
-                        <span class="event_title"><?php echo $title; ?></span>
+                        <span class="event_title"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></span>
                         <span class="event_author">by <?php echo $by; ?></span>
                         <span class="event_date"><?php echo $date; ?></span>
                       </div>
