@@ -3,7 +3,7 @@ $color = get_sub_field('color');
 $text_color=get_sub_field('text_color');
 $title = get_sub_field('title');
 if(empty($text_color)) {
-    $text_color = '#000';  
+    $text_color = '#fff';  
 }
 ?>
 <?php if(have_rows('tabs')):?>

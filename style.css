@@ -84,6 +84,14 @@ body p, body h2, h1  {
   padding: 0;
   max-width: 1420px; 
 }
+.farm_logos, .content-flexible-events_accordion, .content-flexible-left_content_right_image_cta_2 {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+.content-flexible-contact_us {
+  margin-top: 100px;
+  margin-bottom: 100px; 
+}
 
 .site, .site-main { position: relative;width: 100%;overflow: hidden;}
 /*.content-flexible { float: left; max-width: 1422px; margin-left: auto; margin-right: auto; padding: 20px}*/
@@ -126,7 +134,7 @@ body p, body h2, h1  {
 /*Fullbleed CTA*/
 .content-flexible-full_bleed_cta{ padding-right: 0;padding-left: 0;}
 .fullbleed_with_text {display: flex; flex-wrap: wrap; position: relative; width: 100%; background: #3d7cc9;}
-.fullbleed_with_text .intro_text { width: 1420px;margin: 0 auto;  padding-top: 8.5%; padding-bottom: 10%;}
+.fullbleed_with_text .intro_text { width: 1420px;margin: 0 auto;  padding-top: 10%; padding-bottom: 10%;}
 .fullbleed_with_text .intro_text h2{color:#fff; font-size: 50px; line-height: 65px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold'; 
 }
 .fullbleed_with_text.image{background: #d9d8d6;}
@@ -145,7 +153,7 @@ body p, body h2, h1  {
 /*--Contained CTA------*/
 .contained_cta {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;}
 .contained_cta .vertcial_text { position: absolute;
-  top: 270px;
+  top: 232px;
   width: 280px;
   left: -9.4%;}
   .contained_cta .content_block {
@@ -177,7 +185,7 @@ a.contained_cta_link:hover {
 a.contained_cta_link:visited { text-decoration: none;}
 
 .contained_cta.right_block{ background-repeat: no-repeat; background-position: center center; background-size: cover;
-  width: 48%;margin-left: 2%; height: 467px;}
+  width: 50%; height: 467px;}
   .contained_cta.right_block img {
     width: 100%;
   }
@@ -261,7 +269,7 @@ width: 35%; padding-left: 5%;
   min-height: 583px;
   height: auto;
 }
-.fullbleed_content .intro_text h2{color:#fff; font-size: 50px; line-height: 65px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold';}
+.fullbleed_content .intro_text h2{color:#fff; font-size: 50px; line-height: 65px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold'; margin-top: 0px;}
 .fullbleed_content .intro_text p{color:#fff;margin-bottom: 40px; padding-top: 10px;font-family: "Swiss721BT-Regular";font-size: 18px;letter-spacing: 0.45px;line-height: 35px;}
 a.fullbleed_content_link { color:#fff; text-decoration: none; font-size: 25px;line-height: 30px;font-family: "Swiss721BT-Bold"; }
 a.fullbleed_content_link:hover {
@@ -303,8 +311,8 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
 }
 /*----------Left Content Right Image CTA (2)-----------*/
 
-.left_content_right_image_cta_2 {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;  padding:0;}
-.left_content_right_image_cta_2 .intro_text {width: 50%; padding-top: 5%; padding-bottom: 5%; padding-left: 0; padding-right: 5%;}
+.left_content_right_image_cta_2 { height: 467px; display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;  padding:0;}
+.left_content_right_image_cta_2 .intro_text {width: 50%; padding-top: 3%; padding-bottom: 3%; padding-left: 0; padding-right: 5%;}
 .left_content_right_image_cta_2 .intro_text h2{color:#000; font-size: 50px; line-height: 55px; letter-spacing: 1.25px; font-family: 'RecoletaAlt-Bold'; 
 }
 .left_content_right_image_cta_2 .intro_text p{color:#000;margin-bottom: 38px; padding-top: 8px; font-family: 'Swiss721BT-Regular';font-size: 18px;letter-spacing: 0.45px;line-height: 35px;}
@@ -446,12 +454,13 @@ a.conservation_contentlink:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .2);
+  background-image: url('assets/images/overlay-initial.svg');
+  background-size: cover;
 }
 .fullbleed_grid_3column .left_block:hover .overlay {
-  background: rgba(0, 0, 0, .5);
+  background-image: url('assets/images/overlay-hover.svg');
 }
-.fullbleed_grid_3column h2{letter-spacing: 2px; font-family: 'RecoletaAlt-Bold'; position: absolute; bottom: 0px; padding: 3%; width: 100%;}
+.fullbleed_grid_3column h2{min-height: 167px; letter-spacing: 2px; font-family: 'RecoletaAlt-Bold'; position: absolute; bottom: 0px; padding: 0px 50px 40px; width: 100%;}
 a.fullbleed_grid_3columnlink{ color: rgb(255, 255, 255); text-decoration: none; font-size: 40px; line-height: 55px; letter-spacing: 1px;font-family: "RecoletaAlt-Bold";}
 a.fullbleed_grid_3columnlink:hover {
   color: #fff;
@@ -482,7 +491,7 @@ a.fullbleed_grid_3columnlink:hover {
 .tabbed_content_section{ display: flex; flex-wrap: wrap; position: relative; }
 .tabbed_content_section .tabbed_left_side { width: 40% }
 .tabbed_content_section .tabbed_right_side { width: 60% }
-.tabbed_content_section .tabbed_left_side h2{ font-size: 50px; line-height: 65px ;letter-spacing:1px; font-family: 'RecoletaAlt-Bold'; padding-bottom: 96px; }
+.tabbed_content_section .tabbed_left_side h2{ font-size: 50px; line-height: 65px ;letter-spacing:1px; font-family: 'RecoletaAlt-Bold'; padding-bottom: 96px;padding-top: 73px;padding-right: 70px; }
 .tabbed_content_section .tabbed_left_side ul{border-bottom: 0; list-style: none; margin:0px; padding: 0px; max-width: 325px; }
 .tabbed_left_side ul li button {color:#000;border-radius: 0px; background: none; border:none; cursor: pointer; font-size: 30px; margin-bottom: 25px; text-align: left; font-family: "Swiss721BT-Bold"; padding:10px 0px;}
 .tabbed_left_side ul li button:focus{ outline: none; }
@@ -490,9 +499,10 @@ a.fullbleed_grid_3columnlink:hover {
 .tabbed_right_side .tab-pane{ display: none; }
 .tabbed_right_side .tab-pane.active{ display: block; }
 .content-flexible-tabbed_content {
-  min-height: 730px;
+  min-height: 960px;
+  margin-top: 60px;
 }
-.tabbed_box_content { max-width:722px; background:#000; padding: 38px 40px 48px 38px; color: #fff; position: absolute; left: 30%;top: 48%; }
+.tabbed_box_content {min-height: 472px; max-width:722px; background:#000; padding: 38px 40px 48px 38px; color: #fff; position: absolute; left: 30%;top: 300px; }
 .tabbed_box_content h3{ font-size: 50px; line-height: 55px ; font-family: 'RecoletaAlt-Bold'}
 .tabbed_box_content p{color: #fff; font-size: 18px; line-height: 35px; font-family: "Swiss721BT-Regular"; letter-spacing: 0.45px; }
 .tabbed_box_content a.learn_more{ padding-right: 10px; font-size: 25px; line-height: 30px; font-family: "Swiss721BT-Bold"; text-decoration: none; color: #fff; }
@@ -545,8 +555,12 @@ p.reading_time_title { float: left; width:100%; font-size: 20px; font-weight: bo
 .content-flexible-flexible_content {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 3%;
 }
-
+a svg{
+  position: relative;
+  top: 2.5px;
+}
 /*-------------------------------------*/
 @media(min-width:1920px){
   .content-flexible-5050_full_bleed_cta, 
@@ -650,7 +664,7 @@ p.reading_time_title { float: left; width:100%; font-size: 20px; font-weight: bo
 
   .contained-width{padding:0px 90px;}
 }
-.vertcial_text { top: 178px;text-align: right; width: 280px;left: -9.4%;}
+.vertcial_text { top: 165px;text-align: right; width: 280px;left: -9.4%;}
 }
 @media(max-width:1024px) {
     .tabbed_content_section .tabbed_left_side h2{font-size: 38px; line-height: 55px; padding-bottom: 45px;}
@@ -687,6 +701,7 @@ p.reading_time_title { float: left; width:100%; font-size: 20px; font-weight: bo
 .fullbleed_content .intro_text.left_block { width: 100%; }
 .fullbleed_content_image.left_block{ width:100%; }
 .fullbleed_content_image.right_block{ width:100%; }
+
   .farm_logos li{ width:48%; list-style: none; padding:0 2%; }
   .fullbleed_with_text5050 .left_block {
     width: 100%;
