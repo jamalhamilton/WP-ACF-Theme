@@ -78,7 +78,10 @@ if( have_rows('accordions') ): ?>
                    <div class="event_detail_section">
                       <div class="event_detail">
                       <h2 class="event_title">
-                        <a href="#exampleModalCenter-<?php echo $k; ?>" class="btn btn-primary" data-toggle="modal" ><img class="eyeicon" src="<?php bloginfo('template_url')?>/assets/images/noun_Eye_585509.svg" alt=""></a>&nbsp; 
+                        <?php if(!empty($bio)) { ?>
+                        <a href="#exampleModalCenter-<?php echo $k; ?>" class="btn btn-primary" data-toggle="modal" ><img class="eyeicon" src="<?php bloginfo('template_url')?>/assets/images/noun_Eye_585509.svg" alt=""></a>&nbsp;
+                        <?php } ?> 
+                        
                               <?php echo $name; ?>
                       </h2>
                         <p><?php echo $title2; ?></p>

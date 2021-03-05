@@ -13,7 +13,7 @@ $cta = get_sub_field('cta');
 
 <?php if(empty($image)): 
   if(empty($text_color)) {
-    $text_color = '#000';  
+    $text_color = '#fff';  
   }
 
 ?>
