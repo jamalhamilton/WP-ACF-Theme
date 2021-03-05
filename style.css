@@ -481,7 +481,7 @@ a.fullbleed_grid_3columnlink:hover {
   .leadership_accordion_section .leadership_set > a.active{  background-color:#000;  color: #fff;  }
   .leadership_accordion_section .faq_contenta{  background-color: #fff;  display:none;  }
   .leadership_accordion_section .leadership_set.active .faq_contenta{ display: block; }
-   .leadership_accordion_section .faq_contenta h2.event_title { font-size: 21px; padding-bottom: 5px; line-height: 25px; margin-bottom: 5px; font-family: 'RecoletaAlt-Bold';}
+   .leadership_accordion_section .faq_contenta h2.event_title { font-size: 21px; padding-bottom: 5px; line-height: 25px; margin-bottom: 5px; font-family: 'Swiss721BT-Bold';}
   .leadership_accordion_section .faq_contenta p{margin: 0; margin-left: 49px; color: #000; font-size: 21px; line-height: 28px; font-family: "Swiss721BT-Regular";  }
   .leadership_accordion_section .faq_events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
   .leadership_accordion_section .plus-icon, .leadership_accordion_section .minus-icon { width: 53px; height: 53px; }

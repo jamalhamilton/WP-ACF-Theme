@@ -26,9 +26,9 @@
   .modal-body { padding: 0px;}
 .container-fluid { padding-right: 0px; padding-left: 0px;}
 .col-md-7.ml-auto { padding: 25px 102px;}
-h1.popupname { font-size: 55px; color: #000;font-family: "Swiss721BT-Bold";line-height: 66px;letter-spacing: 1.1px;}
+h1.popupname { margin-top: 66px;font-size: 55px; color: #000;font-family: "Swiss721BT-Bold";line-height: 66px;letter-spacing: 1.1px;}
 h3.popup-title {margin-top: 0;margin-bottom: 30px; font-size: 35px;color: #000;line-height: 42px;letter-spacing: 0.88px;font-family: "Swiss721BT-Regular";}
-p.popupbio { font-size: 22px!important; margin: 0 0 45px 0!important;marcolor: #000;line-height: 45px;letter-spacing: 0.55px;font-family: "Swiss721BT-Regular";}
+p.popupbio { font-size: 22px!important; margin: 0 0 45px 0!important;marcolor: #000;line-height: 45px !important;letter-spacing: 0.55px;font-family: "Swiss721BT-Regular";}
 span.popupsocial { float: left; margin: 20px 7px;}
 span.popupsocial img{width: 30px;height: 24px; }
 a.btn.btn-primary.active {background-color: #fff; border: 0; box-shadow: none;padding: 0px 0px;
@@ -78,9 +78,15 @@ if( have_rows('accordions') ): ?>
                    <div class="event_detail_section">
                       <div class="event_detail">
                       <h2 class="event_title">
-                        <?php if(!empty($bio)) { ?>
-                        <a href="#exampleModalCenter-<?php echo $k; ?>" class="btn btn-primary" data-toggle="modal" ><img class="eyeicon" src="<?php bloginfo('template_url')?>/assets/images/noun_Eye_585509.svg" alt=""></a>&nbsp;
-                        <?php } ?> 
+                        <?php 
+                          $visible = "visibility: hidden;";
+                        if(!empty($bio)) {
+                          $visible = "visibility: visible;";
+                        } ?> 
+                        <a href="#exampleModalCenter-<?php echo $k; ?>" style="margin-right: 3px;" class="btn btn-primary" data-toggle="modal" >
+
+                          <img class="eyeicon" style="<?php echo $visible; ?>" src="<?php bloginfo('template_url')?>/assets/images/noun_Eye_585509.svg" alt=""></a>
+                        
                         
                               <?php echo $name; ?>
                       </h2>

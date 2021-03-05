@@ -84,6 +84,9 @@ if(empty($text_color)) {
   jQuery(document).ready(function () {
     size_cli = jQuery(".conservation_content div.left_block").size();
     y=3;
+    if(size_cli < 3) {
+      jQuery("#moreLoad").hide();
+    }
     jQuery('.conservation_content div.left_block:lt('+y+')').show();
     jQuery('#moreLoad').click(function () {
         y= (y+3 <= size_cli) ? y+3 : size_cli;

@@ -63,6 +63,9 @@ if(empty($text_color)) {
     var size_li = jQuery(".timely_content_3column div.left_block").size();
 
     var x=3;
+    if(size_li < 3) {
+      jQuery("#loadMore").hide();
+    }
     jQuery('.timely_content_3column div.left_block:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
         console.log(size_li);
