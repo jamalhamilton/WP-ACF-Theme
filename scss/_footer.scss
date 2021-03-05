@@ -16,9 +16,52 @@
 
     .footer-column {
       width:30%;
+      .footer-address {
+        font-size: 16px;
+        margin-top:25px;
+      }
+      h3.footer-menu-header {
+        font-family: Swiss721BT-Bold;
+        font-size: 35px;
+        line-height:1;
+      }
       .menu-footer-menu-container {
         ul#footer-menu {
           list-style: none;
+          margin: 50px 0 0 0;
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            margin-bottom: 20px;
+            width: 210px;
+            a {
+              font-family: Swiss721BT-Bold;
+              font-size: 20px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .footer-copyright-info {
+        margin-top: 50px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    .footer-column-right {
+      text-align: center;
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        a {
+          margin-right: 25px;
+          img {
+            height:25px;
+          }
+        }
+        a:last-child {
+          margin:0;
         }
       }
     }

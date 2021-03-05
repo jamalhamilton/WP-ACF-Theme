@@ -148,11 +148,17 @@ function amc_theme_scripts() {
 
 	wp_enqueue_script( 'amc-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	wp_enqueue_script( 'amc-cc-modals', get_template_directory_uri() . '/assets/js/cc-modals.js');
+
+	wp_localize_script('amc-cc-modals', 'WPURLS', array( 'siteurl' => get_option('siteurl'), 'ajaxurl' => admin_url('admin-ajax.php') ));
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'amc_theme_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -219,5 +225,50 @@ function my_wp_nav_menu_objects( $items, $args ) {
 
 	// return
 	return $items;
+
+}
+
+
+
+
+
+
+
+
+
+
+add_action( 'wp_ajax_f711_get_post_content', 'f711_get_post_content_callback' );
+// not logged in users
+add_action( 'wp_ajax_nopriv_f711_get_post_content', 'f711_get_post_content_callback' );
+
+function f711_get_post_content_callback() {
+
+    // retrieve post_id, and sanitize it to enhance security
+    $post_id = intval($_POST['post_id'] );
+
+    // Check if the input was a valid integer
+    if ( $post_id == 0 ) {
+        echo "Invalid Input";
+        die();
+    }
+
+    // get the post
+    $thispost = get_post( $post_id );
+
+    // check if post exists
+    if ( !is_object( $thispost ) ) {
+        echo 'There is no post with the ID ' . $post_id;
+        die();
+    }
+
+		global $post;
+    $post = get_post($post_id);
+		get_template_part('template-parts/content', 'weather');
+		wp_reset_postdata();
+
+
+
+
+    die();
 
 }
