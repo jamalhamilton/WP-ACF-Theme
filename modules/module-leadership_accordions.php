@@ -30,7 +30,7 @@ h1.popupname { margin-top: 66px;font-size: 55px; color: #000;font-family: "Swiss
 h3.popup-title {margin-top: 0;margin-bottom: 30px; font-size: 35px;color: #000;line-height: 42px;letter-spacing: 0.88px;font-family: "Swiss721BT-Regular";}
 p.popupbio { font-size: 22px!important; margin: 0 0 45px 0!important;marcolor: #000;line-height: 45px !important;letter-spacing: 0.55px;font-family: "Swiss721BT-Regular";}
 span.popupsocial { float: left; margin: 20px 7px;}
-span.popupsocial img{width: 30px;height: 24px; }
+span.popupsocial img{width: 32px; }
 a.btn.btn-primary.active {background-color: #fff; border: 0; box-shadow: none;padding: 0px 0px;
     margin: 0px 0px;}
     .modal-dialog.modal-lg {

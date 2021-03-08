@@ -2,6 +2,7 @@
 $color = get_sub_field('color');
 $text_color=get_sub_field('text_color');
 $title = get_sub_field('title');
+ 
 if(empty($text_color)) {
     $text_color = '#fff';  
 }
@@ -38,14 +39,15 @@ if(empty($text_color)) {
 					$image = get_sub_field('image');
 					$result = preg_replace("/[^a-zA-Z]+/", "", $title);
 					$string = strtolower( str_replace(' ', '', $result));
+					//echo wp_get_attachment_url($image['ID']);
 					?>
 					<div class="tab-pane <?php if($k == 1) {?>  active<?php }?>" id="<?php echo $string; ?>" role="tabpanel" aria-labelledby="<?php echo $string; ?>-tab"> 
 						
 					<?php
 					if(! empty( $image['url'])):
 					?>
-					<figure>
-						<?php echo wp_get_attachment_image( $image['ID'], 'tabbed_content_img' ); ?>
+					<figure style="background-image: url('<?php echo wp_get_attachment_url($image['ID']);?>');">
+						<?php //echo wp_get_attachment_image( $image['ID'], 'tabbed_content_img' ); ?>
 					</figure>
 					<div class="tabbed_box_content">
 						<h3><?php echo   $title; ?></h3>

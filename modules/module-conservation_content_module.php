@@ -70,7 +70,7 @@ if(empty($text_color)) {
       border: 1px solid #8D8C8C;
       border-radius: 20px;
       opacity: 1;
-      margin: 0 auto;
+      margin: 20px auto;
       font-family: "Swiss721BT-Bold";
       font-size: 18px;
       padding: 10px 0;

@@ -7,7 +7,10 @@ $copy = get_sub_field('copy');
 $cta = get_sub_field('cta'); 
 
 if(empty($text_color)) {
-    $text_color = '#000';  
+    $text_color = '#fff';  
+}
+if(empty($color)) {
+    $color = '#000';  
 }
 ?>
 

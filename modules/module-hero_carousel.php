@@ -8,6 +8,9 @@
 .flexslider .slides img {
     height: 655px;
 }
+div#slider.flexslider {
+    border:0;
+}
 </style>
 <?php 
 $color = get_sub_field('color');
