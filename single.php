@@ -56,11 +56,11 @@ get_header();
 					
 				</div>
 			  </div>
-			  <div class="social_share">
+			  <div class="social_share" style="display: flex;">
 
-                     <?php 
-                      
-					 echo do_shortcode('[Sassy_Social_Share]'); ?>
+                    <?php 
+                    	echo '<div class="share-txt" style="padding-top:8px;">Share: </div>';
+						echo do_shortcode('[Sassy_Social_Share]'); ?>
 			  </div>
 			</div>
 			    <!--<?php 
