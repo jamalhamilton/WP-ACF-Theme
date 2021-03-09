@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="footer-column-container">
 			<div class="footer-column">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity@2x.png" alt="">
+				<img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/AMC_MainLockup-white_RGB.png" alt="">
 				<div class="footer-address">10 City Square Boston, MA 02129</div>
 				<a href='#' class='weather-popup' data-weather-popup='117104'>Test Weather Popup</a>
 			</div>
@@ -33,10 +33,10 @@
 			<div class="footer-column footer-column-right">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity@2x.png" alt="">
 				<div class="social-icons">
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity.png" alt=""></a>
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity.png" alt=""></a>
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity.png" alt=""></a>
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity.png" alt=""></a>
+					<a href="https://instagram.com/appalachianmountainclub/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt=""></a>
+					<a href="https://twitter.com/AppMtnClub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.svg" alt=""></a>
+					<a href="https://www.facebook.com/AppalachianMountainClub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt=""></a>
+					<a href="https://www.youtube.com/AppalachianMtnClub"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" alt=""></a>
 				</div>
 			</div>
 		</div>
