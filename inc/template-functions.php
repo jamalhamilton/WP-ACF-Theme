@@ -56,7 +56,7 @@ function example_cats_related_post() {
 		$same_category = new WP_Query(array(
 			'cat'            => $current_category[0]->cat_ID,
 			'post__not_in'   => array($post->ID),
-			'orderby'        => 'rand',
+			'orderby'        => 'DESC',
 			'posts_per_page' => 3
 		));
 		?>
