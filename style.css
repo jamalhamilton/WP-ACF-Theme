@@ -550,8 +550,10 @@ a.fullbleed_grid_3columnlink:hover {
 .single h1{ font-size: 35px; line-height: 40px; font-family: 'RecoletaAlt-Bold'; }
 .post_header { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 10px 0;}
 .postmeta { display: flex; flex-wrap: wrap; }
-.head_col{ padding: 0 5px; font-family: 'Swiss721BT-Bold';}
+.head_col{ padding: 0 10px; font-family: 'Swiss721BT-Bold';}
 .head_col a{color: #000; text-decoration: none;}
+.post_author.head_col {padding: 0;}
+.post_detail {padding-top: 45px}
 .post_detail .rt-reading-time .rt-label, .post_detail .rt-reading-time .rt-time{ display: none!important; }
 .single .featured_img{ text-align: center; }
 .single p{font-family: "Swiss721BT-Regular";font-size: 18px; text-align: left; letter-spacing: 0.45px; color: #373839;}
@@ -568,20 +570,21 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     line-height: 32px;
     font-size: 18px;
 }
+.heateor_sss_sharing_container.heateor_sss_horizontal_sharing {padding: 0 0 0 10px;}
 
 /*---Author Box in Blog Post (Blog post only)---*/
 .author_section { float: left; width: 100%;}
-h2.author_details { color: #373839; font-size: 30px; font-family: 'Swiss721BT-Bold'; padding: 30px 0 10px;border-top: 2px solid #373839;}
+h2.author_details { color: #373839; font-size: 30px; font-family: 'Swiss721BT-Bold'; padding: 10px 0 0 0; border-top: 1px solid #373839;}
 .single-post #authorboxsingle {	display: block;}
-.authorboxsingle { padding: 20px 20px 20px 0; width: 100%; float: left; display: block;border-bottom: 2px solid #373839;}
-.authorboxsingle.authormulti { padding: 20px 20px 20px 0; width: 100%; border-bottom:none;}
-.authorboxsingle.authormulti:last-child{ border-bottom: 2px solid #373839;;}
+.authorboxsingle { padding: 20px 0 40px 0; width: 100%; float: left; display: block;border-bottom: 1px solid #373839;}
+.authorboxsingle.authormulti { padding: 20px 0 0 0; width: 100%; border-bottom:none;}
+.authorboxsingle.authormulti:last-child{ border-bottom: 1px solid #373839; padding-bottom: 40px;}
 .authorboxsinglename {font-size: 1.25rem;font-weight: bold;line-height: 1.4;}
 
 /*--------Related Post Section---------*/
-.related_title { float: left; width: 100%; }
+.related_title { float: left; width: 100%;}
 .related_title h1{ font-size: 30px; font-family: 'Swiss721BT-Bold'; text-align: left; margin-bottom: 5px;}
-.related_posts { float: left; width: 100%;}
+.related_posts { float: left; width: 100%; padding-bottom: 60px;}
 .box_container { float: left; padding: 20px 40px 20px 0; width: 33%;}
 
 figure.box_featured_img { width: 100%; min-height: 220px; margin: 10px 0;}
