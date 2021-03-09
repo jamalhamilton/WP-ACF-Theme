@@ -21,7 +21,9 @@
 		  <div id="main-body" class="">
 		    <?php get_template_part("template-parts/content", "flexible"); ?>
 		  </div>
-		<?php endif;
+		<?php else: ?>
+		<div class="contained-width"><?php the_content(); ?></div>
+	<?php		endif;
 
 		wp_link_pages(
 			array(

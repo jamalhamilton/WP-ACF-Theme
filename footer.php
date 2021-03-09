@@ -18,7 +18,7 @@
 				<div class="footer-address">10 City Square Boston, MA 02129</div>
 				<a href='#' class='weather-popup' data-weather-popup='117104'>Test Weather Popup</a>
 			</div>
-			<div class="footer-column">
+			<div class="footer-column footer-menu-column">
 				<h3 class="footer-menu-header">More Information</h3>
 				<?php
 				wp_nav_menu(
