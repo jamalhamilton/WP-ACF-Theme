@@ -31,9 +31,9 @@ get_header();
 				comments_template();
 			endif;*/?>
 			<article class="post-<?php echo get_the_ID(); ?>">
-					<h1> <?php the_title();?></h1>
+					<h1 style="margin-top: 60px;"> <?php the_title();?></h1>
 				<div class="post_header">
-					<div class="postmeta">
+					<div class="postmeta" style="padding-top: 8px;">
 					<div class="post_author head_col">
 			          <?php
 					  if ( function_exists( 'coauthors_posts_links' ) ) {
@@ -46,10 +46,10 @@ get_header();
 					 ?>
 			        </div>
 			        <div class="post_date head_col">
-			        	/ <?php echo  get_the_date( 'F j, Y ' ).' ';?> 
+			        	/</div><div class="post_author head_col"><?php echo  get_the_date( 'F j, Y ' ).' ';?> 
 			        </div>
 				<div class="post_reading head_col">
-					/
+					/</div><div class="post_author head_col">
 					<?php 
                       
 					 echo do_shortcode('[rt_reading_time label="" postfix="minute read" postfix_singular="minute read"]'); ?>
@@ -89,12 +89,12 @@ get_header();
 			$custom_title = get_user_meta( $coauthor->ID, 'wpseo_title', true ); echo $titleeee;
 		?>
 		<div id="authorboxsingle-<?php echo $coauthor->ID; ?>" class="authorboxsingle <?php if($number>1){ echo 'authormulti'; } ?>">
-		<p><span class="authorboxsinglename"><?php echo ( $coauthor->display_name ); ?></span> 
+		<p style="margin-bottom: 0.5em;"><span class="authorboxsinglename"><?php echo ( $coauthor->display_name ); ?></span> 
 		<?php if($custom_title){ ?> 
-				<p class="custom_title"><?php echo $custom_title; ?> </p>
+				<p class="custom_title" style="margin-bottom: 0.5em;"><?php echo $custom_title; ?> </p>
 		<?php } ?>
 		<!--<span class="authorboxsinglelink">(<a href="<?php echo get_author_posts_url( get_the_author_meta( '$coauthor->ID' ), get_the_author_meta( '$coauthor->user_login' ) ); ?><?php echo ( $coauthor->user_login ); ?>">See all</a>)</span></p>-->
-		<p class="authorboxsinglebio"><?php echo ( $coauthor->description ); ?></p>
+		<p class="authorboxsinglebio" style="margin-bottom: 0.5em;"><?php echo ( $coauthor->description ); ?></p>
 		</div>
 		<?php
 		}
