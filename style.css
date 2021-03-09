@@ -1005,3 +1005,10 @@ a svg{
   
 }
 /*# sourceMappingURL=map/theme.css.map */
+
+/* Action Center Widget Styling */
+.advocacy-actionwidget {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
