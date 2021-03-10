@@ -6,11 +6,12 @@ $title = get_sub_field('title');
 if(empty($text_color)) {
     $text_color = '#000';  
 }
+$id = wp_unique_id( 'tc' );
 ?>
 
 
 <div class="content-flexible">
-    <div class="timely_content_3column" style="background-color:<?php echo $color;?>">
+    <div class="timely_content_3column" id="<?php echo $id;?>" style="background-color:<?php echo $color;?>">
     <div class="main_title"><h2 style="color:<?php echo $text_color;?>"><?php echo $title; ?></h2></div>
     <?php if( have_rows('article_cards') ): $i=0; ?>
       <?php while( have_rows('article_cards') ): the_row(); 
@@ -32,7 +33,7 @@ if(empty($text_color)) {
 
 <?php endwhile;
  endif; ?>
- <div id="loadMore">Show more results + </div>
+ <div id="loadMore_<?php echo $id;?>" class="loadMore">Show more results + </div>
 
         </div>  
 </div>
@@ -41,7 +42,7 @@ if(empty($text_color)) {
     .timely_content_3column div.left_block {
       display: none;
     }
-    #loadMore {
+    .loadMore {
       cursor: pointer;
       width: 257px;
       height: 47px;
@@ -60,8 +61,8 @@ if(empty($text_color)) {
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
-    var size_li = jQuery(".timely_content_3column div.left_block").size();
 
+    /*var size_li = jQuery(".timely_content_3column div.left_block").size();
     var x=3;
     if(size_li < 3) {
       jQuery("#loadMore").hide();
@@ -78,6 +79,20 @@ if(empty($text_color)) {
     });
     if(x == size_li || x > size_li) {
       jQuery("#loadMore").hide();
+    }*/
+    jQuery("#<?php echo $id;?>"+" div.left_block").size();
+    if(jQuery("#<?php echo $id;?>"+" div.left_block").size() < 3 || jQuery("#<?php echo $id;?>"+" div.left_block").size() == 3) {
+      jQuery("#loadMore_<?php echo $id;?>").hide();
     }
+    jQuery('#<?php echo $id;?>'+' div.left_block:lt('+3+')').show();
+    x=3;
+    jQuery('#loadMore_<?php echo $id;?>').click(function () {
+        x= (x+3 <= jQuery("#<?php echo $id;?>"+" div.left_block").size()) ? x+3 : jQuery("#<?php echo $id;?>"+" div.left_block").size();
+        jQuery('#<?php echo $id;?>'+' div.left_block:lt('+x+')').show();
+        console.log(x);
+        if(x == jQuery("#<?php echo $id;?>"+" div.left_block").size() || x > jQuery("#<?php echo $id;?>"+" div.left_block").size()) {
+          jQuery("#loadMore_<?php echo $id;?>").hide();
+        }
+    });
 });
 </script>

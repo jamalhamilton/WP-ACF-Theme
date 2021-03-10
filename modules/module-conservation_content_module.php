@@ -9,7 +9,7 @@ $body = get_sub_field('body');
 if(empty($text_color)) {
   $text_color = '#000';  
 }
-
+$idName = wp_unique_id( 'con' );
 ?>
 
 
@@ -19,7 +19,7 @@ if(empty($text_color)) {
       <!-- <img src="<?php echo  $bannerimage ['url'] ; ?>"> -->
       <?php endif; ?>
 </div>
-    <div class="conservation_content" style="background-color:<?php echo $color;?>">
+    <div class="conservation_content" id="<?php echo $idName;?>" style="background-color:<?php echo $color;?>">
     <div class="main_title"><h2 style="color:<?php echo $text_color;?>"><?php echo $title; ?></h2>
     <?php echo $body; ?>
   </div>
@@ -54,7 +54,7 @@ if(empty($text_color)) {
 <?php endwhile;
  endif; ?>
 
- <div id="moreLoad">Show more results + </div>
+ <div id="moreLoad_<?php echo $idName;?>" class="moreLoad">Show more results + </div>
 
         </div>  
 </div>
@@ -63,7 +63,7 @@ if(empty($text_color)) {
     .conservation_content div.left_block {
       display: none;
     }
-    #moreLoad {
+    .moreLoad {
       cursor: pointer;
       width: 257px;
       height: 47px;
@@ -82,7 +82,7 @@ if(empty($text_color)) {
 
 <script type="text/javascript">
   jQuery(document).ready(function () {
-    size_cli = jQuery(".conservation_content div.left_block").size();
+    /*size_cli = jQuery(".conservation_content div.left_block").size();
     y=3;
     if(size_cli < 3) {
       jQuery("#moreLoad").hide();
@@ -97,6 +97,21 @@ if(empty($text_color)) {
     });
     if(y == size_cli || y > size_cli) {
       jQuery("#moreLoad").hide();
+    }*/
+    /*-----------*/
+    jQuery("#<?php echo $idName;?>"+" div.left_block").size();
+    if(jQuery("#<?php echo $idName;?>"+" div.left_block").size() < 3 || jQuery("#<?php echo $idName;?>"+" div.left_block").size() == 3) {
+      jQuery("#moreLoad_<?php echo $idName;?>").hide();
     }
+    jQuery('#<?php echo $idName;?>'+' div.left_block:lt('+3+')').show();
+    y=3;
+    jQuery('#moreLoad_<?php echo $idName;?>').click(function () {
+        y= (y+3 <= jQuery("#<?php echo $idName;?>"+" div.left_block").size()) ? y+3 : jQuery("#<?php echo $idName;?>"+" div.left_block").size();
+        jQuery('#<?php echo $idName;?>'+' div.left_block:lt('+y+')').show();
+        if(y == jQuery("#<?php echo $idName;?>"+" div.left_block").size() || y > jQuery("#<?php echo $idName;?>"+" div.left_block").size()) {
+          jQuery("#moreLoad_<?php echo $idName;?>").hide();
+        }
+    });
+
 });
 </script>
