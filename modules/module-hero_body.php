@@ -21,9 +21,9 @@ $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 				<div class="intro_text">
 					<h1><?php echo $headline_copy; ?></h1>
 					<?php if(empty($hero_image ['url'])): ?>
-					<p><?php echo $body_copy; ?></p>
+					<?php echo $body_copy; ?>
 						<?php if ($body_copy_2nd_column): ?>
-							<p><?php echo $body_copy_2nd_column; ?></p>
+							<?php echo $body_copy_2nd_column; ?>
 						<?php endif; ?>
 					<?php endif; ?>
 				</div>
