@@ -1,4 +1,4 @@
-<?php 
+<?php
 $color = get_sub_field('color');
 $text_color=get_sub_field('text_color');
 $vertical_title = get_sub_field('vertical_title');
@@ -20,11 +20,13 @@ $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 				<?php endif; ?>
 				<div class="intro_text">
 					<h1><?php echo $headline_copy; ?></h1>
-					<?php if(empty($hero_image ['url'])): ?>  
-					<p><?php echo $body_copy; ?></p>      
-					<p><?php echo $body_copy_2nd_column; ?></p>
+					<?php if(empty($hero_image ['url'])): ?>
+					<p><?php echo $body_copy; ?></p>
+						<?php if ($body_copy_2nd_column): ?>
+							<p><?php echo $body_copy_2nd_column; ?></p>
+						<?php endif; ?>
 					<?php endif; ?>
 				</div>
 			</div>
-	</div>		
+	</div>
 	  </div>
