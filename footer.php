@@ -28,7 +28,7 @@
 					)
 				);
 				 ?>
-				 <div class="footer-copyright-info">Copyright © 2020 All Rights Reserved</div>
+				 <div class="footer-copyright-info">Copyright © <script>document.write(new Date().getFullYear());</script> All Rights Reserved</div>
 			</div>
 			<div class="footer-column footer-column-right">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/four-star-charity@2x.png" alt="">

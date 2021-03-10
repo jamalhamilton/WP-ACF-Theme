@@ -13,9 +13,12 @@
     margin:auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 
     .footer-column {
       width:30%;
+      min-width: 310px;
+      padding:10px;
       .footer-logo {
         max-width:250px;
       }
