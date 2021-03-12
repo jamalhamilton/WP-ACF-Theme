@@ -67,8 +67,7 @@ function example_cats_related_post() {
 				<div class="box_container">
 						<?php 
 								if ( has_post_thumbnail() ) {?>
-									<figure class="box_featured_img">
-								<?php   the_post_thumbnail('single_featured_img'); ?>
+									<figure class="box_featured_img" style="background-image: url('<?php the_post_thumbnail_url();?>');">
 								</figure>
 						<?php 	}
 						?>
