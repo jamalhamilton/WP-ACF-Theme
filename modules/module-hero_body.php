@@ -14,8 +14,7 @@ $body_copy_2nd_column = get_sub_field('body_copy_2nd_column'); ?>
 	<div class="" style="background-color:<?php echo $color;?>">
 			<div class="hero_image_with_text">
 				<?php if(! empty($vertical_title)):?>
-				<div class="vertcial_text">
-					<span><?php echo $vertical_title; ?></span>
+				<div class="vertcial_text"><?php echo $vertical_title; ?>
 				</div>
 				<?php endif; ?>
 				<div class="intro_text">
