@@ -30,47 +30,47 @@ html, body, section {
   body {
     color: #000;
   }
-  #main-body p{
+  .hero_image_with_text .intro_text p, .flexible_content_with_text .intro_text p, .conservation_content p, .single p {
     font-size: 18px;
     font-family: "Swiss721BT-Regular";
     letter-spacing: 0.45px;
     line-height: 35px;
   }
-  #main-body h1 {
+  .hero_image_with_text .intro_text h1, .flexible_content_with_text .intro_text h1, .conservation_content h1, .single h1 {
     font-size: 70px;
     line-height: 84px;
     letter-spacing: 1.75px;
     font-family: "Recoleta-Bold";
   }
-  #main-body h2 {
+  .hero_image_with_text .intro_text h2, .flexible_content_with_text .intro_text h2, .conservation_content h2, .single h2 {
     font-size: 50px;
     line-height: 65px;
     letter-spacing: 1.25px;
     font-family: "Recoleta-Bold";
     padding-bottom: 20px;
   }
-  #main-body h3 {
+  .hero_image_with_text .intro_text h3, .flexible_content_with_text .intro_text h3, .conservation_content h3, .single h3 {
   	font-family: "Swiss721BT-Bold";
   	font-size: 29px;
   	line-height: 40px;
   	letter-spacing: 0.7px;
   	padding-bottom: 20px;
   }
-  #main-body h4 {
+  .hero_image_with_text .intro_text h4, .flexible_content_with_text .intro_text h4, .conservation_content h4, .single h4 {
   	font-size: 27px;
   	line-height: 40px;
   	font-family: "Swiss721BT-Bold";
   	letter-spacing: 0.68px;
   	padding-bottom: 20px;
   }
-  #main-body h5 {
+  .hero_image_with_text .intro_text h5, .flexible_content_with_text .intro_text h5, .conservation_content h5, .single h5 {
   	font-size: 25px;
   	line-height: 35px;
   	font-family: "Swiss721BT-Bold";
   	letter-spacing: 0.63px;
   	padding-bottom: 20px;
   }
-  #main-body h6 {
+  .hero_image_with_text .intro_text h6, .flexible_content_with_text .intro_text h6, .conservation_content h6, .single h6 {
   	font-family: "Swiss721BT-Medium";
   	font-size: 23px;
   	line-height: 35px;
@@ -78,8 +78,19 @@ html, body, section {
   	padding-bottom: 20px;
   }
 
-
-  #main-body ol, #main-body ul, #main-body li {
+  .hero_image_with_text .intro_text ol, .flexible_content_with_text .intro_text ol, .conservation_content ol, .single ol {
+  	font-family: 'Swiss721BT-Regular';
+  	font-size: 18px;
+  	line-height: 35px;
+  	letter-spacing: 0.45px;
+  }
+  .hero_image_with_text .intro_text ul, .flexible_content_with_text .intro_text ul, .conservation_content ul, .single u {
+  	font-family: 'Swiss721BT-Regular';
+  	font-size: 18px;
+  	line-height: 35px;
+  	letter-spacing: 0.45px;
+  }
+  .hero_image_with_text .intro_text li, .flexible_content_with_text .intro_text li, .conservation_content li, .single li {
   	font-family: 'Swiss721BT-Regular';
   	font-size: 18px;
   	line-height: 35px;
@@ -184,8 +195,12 @@ body p, body h2, h1  {
 .content-flexible-hero_body{ margin-bottom: 60px;}
 .hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 650px;}
 .hero_image_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;min-height: 300px;}
-.vertcial_text {position: absolute; top: 40%; left:0px; width: 20% ;}
-.vertcial_text span{
+.vertcial_text {
+  position: absolute;
+  top: 170px;
+  width: 280px;
+  left: -9.4%;
+  text-align: right;
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 4.5px;
@@ -229,6 +244,7 @@ body p, body h2, h1  {
   }
 /*--Contained CTA------*/
 .contained_cta {  display: flex;  flex-wrap: wrap;  position: relative;  width: 100%;}
+.contained_cta .vertcial_text {position: absolute;top: 0px;left: 3%;color:#000; font-size: 30px; line-height: 36px; letter-spacing: 4.5px; transform: rotate(270deg); display: block; text-align: right;}
 .contained_cta .vertcial_text { position: absolute;
   top: 232px;
   width: 280px;
@@ -243,8 +259,6 @@ body p, body h2, h1  {
 .contained_cta .content_block.without-v-txt {
   padding: 20px 20px 0 0px;
 }
-.contained_cta .vertcial_text span{color:#000; font-size: 30px; line-height: 36px; letter-spacing: 4.5px; transform: rotate(270deg); display: block; }
-
 .contained_cta .intro_text {width: 50%; padding-top: 5%; padding-bottom: 5%;}
 .contained_cta .intro_text h2{color:#000; font-size: 50px; line-height: 54px; letter-spacing: 4.5px; font-family: 'Recoleta-Bold';
 }
@@ -411,7 +425,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
   .events_accordion_section .set > a.active{  background-color:#000;  color: #fff;  }
   .events_accordion_section .content{  background-color: #fff; display:none;  }
   .events_accordion_section .set.active .content{ display: block; }
-  .events_accordion_section .content p{ padding: 10px 37px; margin: 0; color: #000; font-size: 18px; line-height: 28px; font-family: "Swiss721BT-Regular";
+  .events_accordion_section .content p{ padding: 10px 37px; margin: 0; color: #000; font-size: 18px; line-height: 35px; font-family: "Swiss721BT-Regular";
   }
   .events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
   .events_accordion_section .minus-icon, .events_accordion_section .plus-icon { width: 53px; height: 53px; }
@@ -474,6 +488,8 @@ a.timely_content_2columnlink{ color:#000; text-decoration: none; line-height: 30
 .timely_content_3column .left_block.last {
   padding-right: 0;
 }
+.timely_content_3column h2{color: #000;  font-size: 50px;  line-height: 65px;  letter-spacing: 1.25px;  margin-bottom: 30px;  margin-top: 30px;
+  font-family: 'Recoleta-Bold';}
 .timely_content_3column h3{color: #000;  font-size: 35px;  line-height: 65px;  letter-spacing: 0.88px;  margin-bottom: 5px; font-family: 'Recoleta-Bold'; margin-top: 15px;}
 .timely_content_3column p{color: #000;margin-bottom: 1em;font-size: 18px;line-height: 35px;letter-spacing: 0.45px;font-family: 'Swiss721BT-Regular';}
 a.timely_content_3columnlink { color:#000; text-decoration: none; font-size: 25px; font-family: "Swiss721BT-Bold";}
@@ -775,9 +791,9 @@ a svg{
   }
   .hero_image_with_text,
   .timely_content_row,
-  .conservation_content
-  {
-    width: 1420px;
+  .conservation_content {
+    width: 100%;
+    max-width: 1420px;
     margin: 0 auto;
   }
   .module_left_content_right_image_cta {
@@ -827,7 +843,6 @@ a svg{
   .box_container figure.box_featured_img {height: 320px;}
   p.reading_time_title {font-size: 16px; line-height: 24px;}
   .related_posts .box_container h2 a{font-size: 22px; line-height: 33px;}
-  .vertcial_text { top: 165px;text-align: right; width: 280px;left: -9.4%;}
 }
 
 @media (max-width:1200px) {
@@ -837,14 +852,14 @@ a svg{
 }
 
 @media(max-width:1024px) {
-    .tabbed_content_section .tabbed_left_side h2{font-size: 38px; line-height: 55px; padding-bottom: 45px;}
-    .tabbed_left_side ul li button { font-size: 23px;line-height: 30px;}
-    .tabbed_box_content { max-width: 550px;; padding: 28px 30px 34px 28px; }
-    .tabbed_box_content h3{font-size: 30px; line-height: 40px ; }
-    .tabbed_box_content p {font-size: 16px;line-height: 25px;}
-    .tabbed_location {font-size: 15px; line-height: 20px;}
-    .tabbed_box_content a.learn_more {padding-right: 10px;font-size: 15px; line-height: 20px; }
-    .box_container figure.box_featured_img {height: 228px;}
+  .tabbed_content_section .tabbed_left_side h2{font-size: 38px; line-height: 55px; padding-bottom: 45px;}
+  .tabbed_left_side ul li button { font-size: 23px;line-height: 30px;}
+  .tabbed_box_content { max-width: 550px;; padding: 28px 30px 34px 28px; }
+  .tabbed_box_content h3{font-size: 30px; line-height: 40px ; }
+  .tabbed_box_content p {font-size: 16px;line-height: 25px;}
+  .tabbed_location {font-size: 15px; line-height: 20px;}
+  .tabbed_box_content a.learn_more {padding-right: 10px;font-size: 15px; line-height: 20px; }
+  .box_container figure.box_featured_img {height: 228px;}
 }
 
 @media(max-width:767px) {
@@ -918,29 +933,38 @@ a svg{
       line-height: 34px;
       letter-spacing: 2px;
   }
-  .contained_cta .vertcial_text {
-    top: 125px;
+  .vertcial_text {
+    top: 110px;
+    width: auto;
+    left: -16%;
     text-align: right;
-    width: 235px;
-    left: -106px;
-  }
-  .contained_cta .vertcial_text span {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 30px;
+    letter-spacing: 3px;
+    transform: rotate(270deg);
+    display: block;
+    font-family: 'ConduitITCPro-Medium';
+    text-transform: uppercase;
+  }
+  .contained_cta .vertcial_text {
+    top: 100px;
+    width: auto;
+    left: -14%;
+    text-align: right;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    transform: rotate(270deg);
+    display: block;
+    font-family: 'ConduitITCPro-Medium';
+    text-transform: uppercase;
   }
 
   .contained_cta .content_block {
-    padding: 0px 0px 0 40px;
+    padding: 20px 0px 0 50px;
   }
   .hero_image{
     min-height:450px;
-  }
-
-  .vertcial_text {
-    top: 190px;
-    width: 320px;
-    left: -40%;
-    text-align: right;
   }
   .hero_image_with_text .intro_text h1,
   .contained_cta .intro_text h2,
@@ -971,15 +995,6 @@ a svg{
   .hero_image_with_text .intro_text {
     width: 100%;
     padding: 20px 0px 0 50px;
-  }
-  .vertcial_text span {
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 3px;
-    transform: rotate(270deg);
-    display: block;
-    font-family: 'ConduitITCPro-Medium';
-    text-transform: uppercase;
   }
   .farm_logos li{
     width:100%;
