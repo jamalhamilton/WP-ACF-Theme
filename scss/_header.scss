@@ -24,16 +24,14 @@
 	display: block;
 }
 
-@media screen and (min-width: 1050px) {
 
-	.menu-toggle {
-		display: none;
-	}
 
-	.main-navigation ul#primary-menu,	.main-navigation > ul  {
-		display: flex;
-	}
+
+
+.main-navigation ul#primary-menu,	.main-navigation > ul  {
+	display: flex;
 }
+
 
 
 
@@ -174,30 +172,167 @@
     display: block !important;
   }
 }
-li.expanded > ul.sub-menu {
-  display: flex !important;
+#masthead {
+	li.expanded > ul.sub-menu {
+	  display: flex !important;
 
-  > li {
-    margin-right: 70px;
-      > ul {
-      display:flex;
-      flex-direction: column;
-      a {
-        font-family: "Swiss721BT-Regular" !important;
-        font-size: 20px;
-      }
-    }
-  }
-}
+	  > li {
+	    margin-right: 70px;
+	      > ul {
+	      display:flex;
+	      flex-direction: column;
+	      a {
+	        font-family: "Swiss721BT-Regular" !important;
+	        font-size: 20px;
+	      }
+	    }
+	  }
+	}
 
-li.expanded > a > img.preview-image {
-  display: block !important ;
-  position: absolute;
-  top:150px;
-  left:-270px;
-  width:220px;
+	li.expanded > a > img.preview-image {
+	  display: block !important ;
+	  position: absolute;
+	  top:150px;
+	  left:-270px;
+	  width:220px;
+	}
 }
 
 .entry-header {
   display: none;
+}
+
+
+#mobile-masthead {display: none;}
+@media (max-width:1230px) {
+	#masthead {
+		display: none;
+	}
+	#mobile-masthead {
+		display: block;
+	}
+}
+#mobile-masthead {
+	z-index: 1000;
+	position: fixed;
+	top:0;
+	right:0;
+
+}
+
+.admin-bar #mobile-masthead, .admin-bar .mobile-menu {
+	top:32px;
+}
+.menu-toggle {
+	position: absolute;
+	top:10px;
+	right:10px;
+	background: transparent;
+}
+.mobile-menu {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: black;
+	overflow-y: scroll;
+	.preview-image {
+		display: none;
+	}
+	* {
+		color:white !important;
+	}
+	a {
+		text-decoration: none;
+	}
+	ul {
+		list-style: none;
+	}
+	.icon-links img {
+		filter: invert(100%);
+	}
+
+	.top-links {
+		display: flex;
+		width:100%;
+		justify-content: center;
+		margin: 70px 0 50px;
+		li:not(:last-child) {
+			margin-right: 20px;
+			padding-right: 20px;
+			border-right: 1px solid white;
+		}
+		a {
+			font-size: 24px;
+		}
+	}
+
+	.main-mobile-nav #primary-menu {
+		> li {
+			position: relative;
+			> a {
+				font-size: 32px;
+				line-height: 48px;
+
+			}
+			> ul {
+			display: none;
+			}
+			> ul > li {
+				font-family: "Swiss721BT-Bold" !important;
+				font-size: 24px;
+				line-height: 1.5;
+				> ul > li {
+					font-family: "Swiss721BT-Regular" !important;
+					font-size: 18px;
+					line-height: 2;
+				}
+			}
+		}
+		> li::after {
+			content: '>';
+			position: absolute;
+			top:10px;
+			right:20px;
+			transition: transform .1s ease;
+			font-size: 36px;
+		}
+		> li.expanded::after {
+			transform: rotate(90deg);
+		}
+		> li.expanded {
+			> ul {
+				display: block;
+			}
+		}
+	}
+
+	.icon-links {
+		margin: 50px 0;
+		display: flex;
+		justify-content: center;
+		a {
+			margin-left:15px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width:40px;
+			img {
+				height:30px;
+				width:30px;
+			}
+			label {
+				font-size: 16px;
+			}
+
+		}
+	}
+
+}
+
+.mobile-menu.open {
+	display: block;
 }

@@ -82,7 +82,6 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" >
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'amc-theme' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
@@ -124,20 +123,70 @@
 	</div>
 	</header><!-- #masthead -->
 
+	<header id="mobile-masthead">
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+		<div class="mobile-menu">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Close</button>
+			<?php if( have_rows('right_links', $post_id) ): ?>
+			<ul class="top-links">
+				<?php
+			    while( have_rows('right_links', $post_id) ) : the_row();
+					$link = get_sub_field('link');
+					$link_url = $link['url'];
+    			$link_title = $link['title'];
+    			$link_target = $link['target'] ? $link['target'] : '_self'; ?>
+						<li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></li>
+			    <?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
+			<nav class="main-mobile-nav"><?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			); ?></nav>
+			<?php if( have_rows('icon_links', $post_id) ): ?>
+			<ul class="icon-links">
+				<?php
+			    while( have_rows('icon_links', $post_id) ) : the_row();
+					$link = get_sub_field('link');
+					$link_url = $link['url'];
+    			$link_title = $link['title'];
+    			$link_target = $link['target'] ? $link['target'] : '_self'; ?>
+						<li><a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><img src="<?php the_sub_field('icon'); ?>"><label><?php echo esc_html( $link_title ); ?></label></a></li>
+			    <?php endwhile; ?>
+				</ul>
+			<?php endif; ?>
+		</div>
+	</header>
+
 
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$('#primary-menu > li > a').click(function(){
+				$('#masthead #primary-menu > li > a').click(function(){
 					event.preventDefault();
 					if ($(this).parent().hasClass('expanded')) {
 						$('.site-header').removeClass('expanded');
-						$('#primary-menu > li').removeClass('expanded');
+						$('#masthead #primary-menu > li').removeClass('expanded');
 					} else {
 						$('.site-header').addClass('expanded');
-						$('#primary-menu > li').removeClass('expanded');
+						$('#masthead #primary-menu > li').removeClass('expanded');
 						$(this).parent().addClass('expanded');
 					}
 				});
+				$('.menu-toggle').click(() => {
+					$('.mobile-menu').toggleClass('open');
+					$('body').toggleClass('noscroll');
+					console.log('menu toggler');
+				});
+				$('.main-mobile-nav #primary-menu > li > a').click(function(){
+					event.preventDefault();
+					$(this).parent().toggleClass('expanded');
+					//$(this).parent().children('ul').slideToggle();
+					console.log('mobile top lvl click');
+				});
+
 			});
 
 	</script>
