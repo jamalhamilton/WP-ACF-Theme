@@ -20,8 +20,7 @@ if(empty($text_color)) {
     <div class="contained_cta">
         <div class="intro_text left_block">
         <?php if(!empty($vertical_title)): ?>
-        <div class="vertcial_text">
-	          	<span><?php echo $vertical_title; ?></span>
+        <div class="vertcial_text"><?php echo $vertical_title; ?>
 	      </div>        
         <?php endif; ?>
         <div class="content_block <?php echo $cls;?>">
