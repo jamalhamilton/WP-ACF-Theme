@@ -43,6 +43,7 @@ if( have_rows('accordians') ): ?>
                 </li>
                 <?php   endwhile; ?>
             </ul>
+            <div class="event_detail_virtual"><p><img src="/wp-content/themes/amc-theme/assets/images/virtual-events-icon.svg" alt="virtual_event">  Indicates Virtual Event</p></div>
         <?php endif; ?>
         </div>
     </div>
