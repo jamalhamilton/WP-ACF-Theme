@@ -445,6 +445,10 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
   }
   .event_detail_section .event_detail{color: #000; font-family: "Swiss721BT-Regular"; margin-bottom:15px;width: 93%; font-size: 18px;text-transform: capitalize;letter-spacing: 0.45px;}
   .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";font-size: 18px;text-transform: capitalize;letter-spacing: 0.45px;}
+  .event_detail_virtual {
+   text-align: right;
+   padding-bottom: 20px; 
+  }
 /*-----------Flexible Content Module------------------*/
 .flexible_content_hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 655px;}
 .flexible_content_with_text { display: flex; flex-wrap: wrap; position: relative; width: 100%;}
