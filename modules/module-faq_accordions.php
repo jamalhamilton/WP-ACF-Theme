@@ -48,7 +48,7 @@ if( have_rows('accordions') ): ?>
                    <div class="event_detail_section">
                       <div class="event_detail">
                         <h2 class="event_title"><?php echo $question; ?></h2>
-                        <p><?php echo $answer; ?></p>
+                        <div class="event_detail"><?php echo $answer; ?></div>
                       </div>
                    </div> 
                 </li>
