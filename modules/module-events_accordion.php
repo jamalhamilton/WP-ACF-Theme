@@ -15,7 +15,9 @@ if( have_rows('accordians') ): ?>
             <i class="fa fa-pluss plus-icon"></i>
         </a>
         <div class="content">
-            <p><?php echo $body; ?></p>
+            <p></p>
+            <div><?php echo $body; ?></div>
+            <p></p>
             <?php if( have_rows('events') ): ?>
             <ul class="events_section">
                 <?php while( have_rows('events') ): the_row();
