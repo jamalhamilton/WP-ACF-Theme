@@ -430,12 +430,13 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
   .events_section { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; }
   .events_accordion_section .minus-icon, .events_accordion_section .plus-icon { width: 53px; height: 53px; }
   .events_section li{ width: 48%; padding: 10px 37px; }
-  .event_detail span { display: block; }
+  .event_detail span { display: block; line-height: 28px;}
   .event_detail span.event_title {
     padding-bottom: 10px;
   }
   .event_detail span.event_title a {
     color: #000;
+    line-height: 30px;
   }
   .event_detail_section {display: flex; flex-wrap: wrap; }
   .event_detail_section figure{ width: 32px;  margin-right: 8px;}
@@ -443,7 +444,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
     width: 32px;
     height: 24px;
   }
-  .event_detail_section .event_detail{color: #000; font-family: "Swiss721BT-Regular"; margin-bottom:15px;width: 93%; font-size: 18px;text-transform: capitalize;letter-spacing: 0.45px;}
+  .event_detail_section .event_detail{color: #000; font-family: "Swiss721BT-Regular"; margin-bottom: 0;width: 93%; font-size: 18px;letter-spacing: 0.45px;}
   .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";font-size: 18px;text-transform: capitalize;letter-spacing: 0.45px;}
   .event_detail_virtual {
    text-align: right;
@@ -507,7 +508,7 @@ a.timely_content_3columnlink { color:#000; text-decoration: none; font-size: 25p
 background-size: 53px;  }
   .faq_accordion_section .faq_set > a.active i{  background-image: url(assets/images/circle-minus.svg);  background-repeat: no-repeat; background-size: 53px;  }
   .faq_accordion_section .faq_set > a.active{  background-color:#000;  color: #fff;  }
-  .faq_accordion_section .faq_content{  background-color: #fff; display:none;  }
+  .faq_accordion_section .faq_content{  background-color: #fff; display:none; padding-bottom: 40px;}
   .faq_accordion_section .faq_set.active .faq_content{ display: block; }
   .faq_accordion_section h2.faq_title{line-height: 60px; margin-bottom: 37px; font-size: 50px; font-family: 'Recoleta-Bold';}
   .faq_accordion_section .faq_content h2.event_title { line-height: 65px;  font-family: 'Recoleta-Bold';letter-spacing: 0.82px;font-size: 33px;margin-bottom: 5px;}
