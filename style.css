@@ -120,7 +120,38 @@ html, body, section {
   a.cta_link:active {
     text-decoration: underline;
   }
-
+  .site-header .contained-width .main-navigation .menu-main-menu-container>ul>li>ul.sub-menu * {
+    line-height: 45px;
+  }
+  #masthead li.expanded>ul.sub-menu a:hover {
+    text-decoration: underline;
+  }
+  .site-header .contained-width .main-navigation .menu-main-menu-container>ul>li {
+    line-height: 28px;
+  }
+  #masthead li.expanded>ul.sub-menu>li>ul a {
+    line-height: 35px;
+  }
+  .site-footer .footer-column-container .footer-menu-column ul#footer-menu {
+    display: inherit;
+    columns: 2;
+    text-transform: uppercase;
+    column-gap: 80px;
+    line-height: 35px;
+    margin: 35px 0 0 0;
+  }
+  .site-footer .footer-column-container .footer-menu-column ul#footer-menu a:hover {
+    text-decoration: underline;
+  }
+  .site-footer .footer-column-container .footer-menu-column ul#footer-menu a:link, .site-footer .footer-column-container .footer-menu-column ul#footer-menu a:visited, .site-footer .footer-column-container .footer-menu-column ul#footer-menu a:hover {
+    color: #D9D8D6;
+  }
+  .site-footer .footer-column-container .footer-menu-column .footer-copyright-info, .site-footer .footer-column-container .footer-column .footer-address {
+    color: #D9D8D6;
+  }
+  .site-footer .footer-column-container .footer-menu-column h3.footer-menu-header {
+    color: white; font-size: 35px; letter-spacing: 1px;font-family: 'Recoleta-Bold';
+  }
   /*-------------------------------*/
 
 
