@@ -132,6 +132,12 @@ html, body, section {
   #masthead li.expanded>ul.sub-menu>li>ul a {
     line-height: 35px;
   }
+  .mobile-menu .icon-links a {
+  width: 60px;
+  }
+  .mobile-menu .icon-links a label {
+  padding-top: 10px;
+  }
   .site-footer .footer-column-container .footer-menu-column ul#footer-menu {
     display: inherit;
     columns: 2;
