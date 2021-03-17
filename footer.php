@@ -16,6 +16,7 @@
 			<div class="footer-column">
 				<img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/AMC_MainLockup-white_RGB.png" alt="">
 				<div class="footer-address">10 City Square Boston, MA 02129</div>
+				<p></p>
 				<a href='#' class='weather-popup' data-weather-popup='119069'>Test Weather Popup</a>
 			</div>
 			<div class="footer-column footer-menu-column">
