@@ -476,7 +476,7 @@ font-size: 50px; line-height: 55px; letter-spacing: 1.25px;font-family: 'Recolet
   .event_detail_section .event_detail span.event_title{ font-family: "Swiss721BT-Bold";font-size: 18px;text-transform: capitalize;letter-spacing: 0.45px;}
   .event_detail_virtual {
    text-align: right;
-   padding-bottom: 20px; 
+   padding-bottom: 20px;
   }
 /*-----------Flexible Content Module------------------*/
 .flexible_content_hero_image{ background-repeat: no-repeat; background-position: center center; background-size: cover; width:100%; min-height: 655px;}
@@ -794,78 +794,10 @@ a svg{
   }
 }
 @media(min-width:1367px) and (max-width:1919px){
-  .content-flexible-5050_full_bleed_cta,
-  .content-flexible-full_bleed_grid_3-column,
-  .content-flexible-full_bleed_grid_3-column .content-flexible,
-  .content-flexible-left_content_right_image_cta,
-  .content-flexible-full_bleed_content,
-  .content-flexible-hero_carousel .content-flexible,
-  .content-flexible-full_bleed_cta,
-  .content-flexible-featured_content .content-flexible,
-  .content-flexible-flexible_content,
-  .content-flexible-flexible_content .content-flexible,
-  .content-flexible-conservation_content_module .content-flexible,
-  .content-flexible-tabbed_content .content-flexible
-  {
-    width: 100%;
-    max-width: 100%;
-  }
-  .content-flexible-hero_body,
-  .content-flexible-hero_body .content-flexible,
-  .content-flexible-hero_carousel,
-  .content-flexible-featured_content,
-  .content-flexible-conservation_content_module,
-  .content-flexible-tabbed_content
-  {
-    max-width: 1676px;
-  }
-  .content-flexible-left_content_right_image_cta .content-flexible {
-    max-width: 1124px;
-  }
-  .hero_image_with_text,
-  .timely_content_row,
-  .conservation_content {
-    width: 100%;
-    max-width: 1420px;
-    margin: 0 auto;
-  }
-  .module_left_content_right_image_cta {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .fullbleed_content .intro_text.right_block {
-    padding-right: 10.4%;
-  }
-  .fullbleed_content .intro_text.left_block {
-    padding-left: 10.4%;
-  }
-  .fullbleed_with_text5050 .left_block {
-    padding-left: 18.8%;
-  }
-  .fullbleed_with_text5050 .right_block {
-    padding-right: 18.8%;
-  }
-  .fullbleed_with_text .intro_text.left_block {
-    padding-left: 10.4%;
-    padding-top: 0;
-  }
-  .fullbleed_with_text .intro_text {
-     /* padding-left: 12.6%;
-      padding-right: 12.6%;*/
-  }
-.featured_content_with_text .intro_text {
-	width: 100%;
-	padding: 4% 7.6%;
-}
-  .content-flexible-full_bleed_cta .fullbleed_with_text {
-    height: 583px;
-  }
-  .tabbed_content_section .tabbed_left_side {
-    padding-left: 7.4%;
+  .fullbleed_with_text {
+    padding:90px;
   }
 }
-
 
 @media(max-width:1440px) {
   .tabbed_content_section .tabbed_left_side h2{ font-size: 50px; line-height: 65px;letter-spacing: 1.25px; font-family: 'Recoleta-Bold'}

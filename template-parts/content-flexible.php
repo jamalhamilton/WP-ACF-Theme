@@ -73,6 +73,12 @@
 		elseif(get_row_layout() == 'tabbed_content'):
 				get_template_part( '/modules/module', 'tabbed_content' );
 
+		 elseif(get_row_layout() == 'flexible_forms_module'):
+		 		get_template_part( '/modules/module', 'flexible_forms_module' );
+
+		elseif(get_row_layout() == 'featured_articles'):
+			 get_template_part( '/modules/module', 'featured_articles' );
+
 		endif;
 	?>
 

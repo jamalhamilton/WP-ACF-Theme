@@ -2,13 +2,13 @@
  <div class="wrapper">
  <!-- header -->
 	<header>
-        <h1>
+        <h1 class="module-header">
            <?php
                 // populate the sub field
                 the_sub_field("main_headline_copy");
             ?>
         </h1>
-        <h3>
+        <h3 class="vertcial_text">
             <?php
                 //
                 the_sub_field("vertical_title");
@@ -28,9 +28,9 @@
         $image = get_sub_field('image');
         $color = get_sub_field('color');
         $text_color=get_sub_field('text_color');
-        
+
         if(empty($text_color)) {
-            $text_color = '#000';  
+            $text_color = '#000';
         }
         ?>
         <div class="column">
