@@ -1,4 +1,4 @@
-right
+
 <?php
 $color = get_sub_field('color');
 $text_color=get_sub_field('text_color');
@@ -27,7 +27,7 @@ if(empty($text_color)) {
           </a>
         <?php } ?>
         </div>
-        <div class="right_block">        
+        <div class="right_block">
           <h2 style="color:<?php echo $text_color;?>"><?php echo $right_title; ?></h2>
           <p style="color:<?php echo $text_color;?>"><?php echo $right_copy; ?></p>
           <?php if(!empty($right_cta)){ ?>
