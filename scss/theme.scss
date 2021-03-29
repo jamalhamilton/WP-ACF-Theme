@@ -22,3 +22,30 @@
   color: #000;
   line-height: 65px;
 }
+
+
+
+.content-flexible-featured_articles .wrapper {
+  width:100%;
+  max-width: unset;
+  position: relative;
+  padding-left: 100px;
+  .columns {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    max-width: unset;
+    .title-header-one {
+      font-family: 'Swiss721BT-Regular';
+      font-size: 22px;
+    }
+    .title-header-two {
+      font-family: 'Recoleta-Bold';
+      font-size: 28px;
+    }
+    .read-more {
+      font-family: 'Swiss721BT-Bold';
+      font-size: 25px;
+    }
+  }
+}
